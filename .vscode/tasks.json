@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run QuantumEngine",
+            "type": "shell",
+            "command": "cmake -S . -B build && cmake --build build && ./build/QuantumEngine",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/mythsnipper/Dev/cpp/QuantumSimulator/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/mythsnipper/Dev/cpp/QuantumSimulator/build/QuantumEngine_autogen/include -I/home/mythsnipper/Dev/cpp/QuantumSimulator/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -g -std=gnu++20 -mno-direct-extern-access -o CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/build/QuantumEngine_autogen/mocs_compilation.cpp",
+  "file": "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/QuantumEngine_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/mythsnipper/Dev/cpp/QuantumSimulator/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/mythsnipper/Dev/cpp/QuantumSimulator/build/QuantumEngine_autogen/include -I/home/mythsnipper/Dev/cpp/QuantumSimulator/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -g -std=gnu++20 -mno-direct-extern-access -o CMakeFiles/QuantumEngine.dir/src/main.cpp.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/src/main.cpp",
+  "file": "/home/mythsnipper/Dev/cpp/QuantumSimulator/src/main.cpp",
+  "output": "CMakeFiles/QuantumEngine.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/mythsnipper/Dev/cpp/QuantumSimulator/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/mythsnipper/Dev/cpp/QuantumSimulator/build/QuantumEngine_autogen/include -I/home/mythsnipper/Dev/cpp/QuantumSimulator/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui -g -std=gnu++20 -mno-direct-extern-access -o CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/src/MainWindow.cpp",
+  "file": "/home/mythsnipper/Dev/cpp/QuantumSimulator/src/MainWindow.cpp",
+  "output": "CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o"
+}
+]
