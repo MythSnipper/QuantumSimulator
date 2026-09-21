@@ -9,5 +9,8 @@ public:
 private:
     void createToolbar();
     void createCentralWidget();
-    void createTimeline();
+
+    QWidget* createLeftPanel();
+    QWidget* createScenePanel();
+    QWidget* createPropertiesPanel();
 };
