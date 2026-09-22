@@ -20,42 +20,45 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/bin/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/home/mythsnipper/.cargo/bin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      The system is: Linux - 7.2.3-zen1-3-zen - x86_64
+      The system is: Linux - 7.0.10-arch1-1 - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -77,45 +80,48 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
+      - "/home/mythsnipper/.cargo/bin/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
       - "/usr/bin/gmake"
-      - "/opt/android-sdk/platform-tools/gmake"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gmake"
       - "/var/lib/flatpak/exports/bin/gmake"
       - "/usr/lib/jvm/default/bin/gmake"
       - "/usr/bin/site_perl/gmake"
       - "/usr/bin/vendor_perl/gmake"
       - "/usr/bin/core_perl/gmake"
-      - "/opt/rocm/bin/gmake"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
+      - "/home/mythsnipper/.cargo/bin/make"
       - "/usr/local/sbin/make"
       - "/usr/local/bin/make"
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -145,34 +151,37 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/c++"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/c++"
+      - "/home/mythsnipper/.cargo/bin/c++"
       - "/usr/local/sbin/c++"
       - "/usr/local/bin/c++"
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -200,17 +209,17 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -254,30 +263,30 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -299,30 +308,30 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -344,30 +353,30 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -389,30 +398,30 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -434,30 +443,30 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -479,30 +488,30 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -524,30 +533,30 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -569,30 +578,30 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -614,42 +623,42 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
+      - "/home/mythsnipper/.cargo/bin/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
-      - "/opt/android-sdk/platform-tools/dlltool"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/dlltool"
       - "/var/lib/flatpak/exports/bin/dlltool"
       - "/usr/lib/jvm/default/bin/dlltool"
       - "/usr/bin/site_perl/dlltool"
       - "/usr/bin/vendor_perl/dlltool"
       - "/usr/bin/core_perl/dlltool"
-      - "/opt/rocm/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -671,30 +680,30 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -716,42 +725,42 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "/home/mythsnipper/.cargo/bin/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
-      - "/opt/android-sdk/platform-tools/tapi"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/tapi"
       - "/var/lib/flatpak/exports/bin/tapi"
       - "/usr/lib/jvm/default/bin/tapi"
       - "/usr/bin/site_perl/tapi"
       - "/usr/bin/vendor_perl/tapi"
       - "/usr/bin/core_perl/tapi"
-      - "/opt/rocm/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -776,64 +785,64 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-16.2"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.2"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.2"
+      - "/home/mythsnipper/.cargo/bin/gcc-ar-16.2"
       - "/usr/local/sbin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
-      - "/opt/android-sdk/platform-tools/gcc-ar-16.2"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gcc-ar-16.2"
       - "/var/lib/flatpak/exports/bin/gcc-ar-16.2"
       - "/usr/lib/jvm/default/bin/gcc-ar-16.2"
       - "/usr/bin/site_perl/gcc-ar-16.2"
       - "/usr/bin/vendor_perl/gcc-ar-16.2"
       - "/usr/bin/core_perl/gcc-ar-16.2"
-      - "/opt/rocm/bin/gcc-ar-16.2"
       - "/usr/bin/gcc-ar-16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16"
+      - "/home/mythsnipper/.cargo/bin/gcc-ar-16"
       - "/usr/local/sbin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
-      - "/opt/android-sdk/platform-tools/gcc-ar-16"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gcc-ar-16"
       - "/var/lib/flatpak/exports/bin/gcc-ar-16"
       - "/usr/lib/jvm/default/bin/gcc-ar-16"
       - "/usr/bin/site_perl/gcc-ar-16"
       - "/usr/bin/vendor_perl/gcc-ar-16"
       - "/usr/bin/core_perl/gcc-ar-16"
-      - "/opt/rocm/bin/gcc-ar-16"
       - "/usr/bin/gcc-ar16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16"
+      - "/home/mythsnipper/.cargo/bin/gcc-ar16"
       - "/usr/local/sbin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
-      - "/opt/android-sdk/platform-tools/gcc-ar16"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gcc-ar16"
       - "/var/lib/flatpak/exports/bin/gcc-ar16"
       - "/usr/lib/jvm/default/bin/gcc-ar16"
       - "/usr/bin/site_perl/gcc-ar16"
       - "/usr/bin/vendor_perl/gcc-ar16"
       - "/usr/bin/core_perl/gcc-ar16"
-      - "/opt/rocm/bin/gcc-ar16"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -858,64 +867,64 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.2"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.2"
+      - "/home/mythsnipper/.cargo/bin/gcc-ranlib-16.2"
       - "/usr/local/sbin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
-      - "/opt/android-sdk/platform-tools/gcc-ranlib-16.2"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gcc-ranlib-16.2"
       - "/var/lib/flatpak/exports/bin/gcc-ranlib-16.2"
       - "/usr/lib/jvm/default/bin/gcc-ranlib-16.2"
       - "/usr/bin/site_perl/gcc-ranlib-16.2"
       - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
       - "/usr/bin/core_perl/gcc-ranlib-16.2"
-      - "/opt/rocm/bin/gcc-ranlib-16.2"
       - "/usr/bin/gcc-ranlib-16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16"
+      - "/home/mythsnipper/.cargo/bin/gcc-ranlib-16"
       - "/usr/local/sbin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
-      - "/opt/android-sdk/platform-tools/gcc-ranlib-16"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gcc-ranlib-16"
       - "/var/lib/flatpak/exports/bin/gcc-ranlib-16"
       - "/usr/lib/jvm/default/bin/gcc-ranlib-16"
       - "/usr/bin/site_perl/gcc-ranlib-16"
       - "/usr/bin/vendor_perl/gcc-ranlib-16"
       - "/usr/bin/core_perl/gcc-ranlib-16"
-      - "/opt/rocm/bin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16"
+      - "/home/mythsnipper/.cargo/bin/gcc-ranlib16"
       - "/usr/local/sbin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
-      - "/opt/android-sdk/platform-tools/gcc-ranlib16"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/gcc-ranlib16"
       - "/var/lib/flatpak/exports/bin/gcc-ranlib16"
       - "/usr/lib/jvm/default/bin/gcc-ranlib16"
       - "/usr/bin/site_perl/gcc-ranlib16"
       - "/usr/bin/vendor_perl/gcc-ranlib16"
       - "/usr/bin/core_perl/gcc-ranlib16"
-      - "/opt/rocm/bin/gcc-ranlib16"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -925,8 +934,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth"
-      binary: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth"
+      source: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2"
+      binary: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -937,13 +946,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth'
+        Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92e2f/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_92e2f.dir/build.make CMakeFiles/cmTC_92e2f.dir/build
-        make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth'
-        Building CXX object CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79a07/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_79a07.dir/build.make CMakeFiles/cmTC_79a07.dir/build
+        make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2'
+        Building CXX object CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -951,8 +960,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92e2f.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_92e2f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccFwDTUJ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79a07.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_79a07.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccmV0ka3.s
         GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -969,14 +978,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 4e9ac8b201f4ca740be09d0c7a39f82f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92e2f.dir/'
-         as -v --64 -o CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFwDTUJ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79a07.dir/'
+         as -v --64 -o CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccmV0ka3.s
         GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_92e2f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92e2f.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_79a07
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79a07.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
@@ -987,14 +996,14 @@ events:
         gcc version 16.2.1 20260810 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92e2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92e2f.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVTugzd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_92e2f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_79a07' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_79a07.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoEpUvE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_79a07 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.2.1 20260810
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVTugzd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_92e2f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoEpUvE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_79a07 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92e2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92e2f.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_92e2f
-        make[1]: Leaving directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_79a07' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_79a07.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_79a07
+        make[1]: Leaving directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2'
         
       exitCode: 0
   -
@@ -1033,13 +1042,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth']
+        ignore line: [Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92e2f/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_92e2f.dir/build.make CMakeFiles/cmTC_92e2f.dir/build]
-        ignore line: [make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-UpmAth']
-        ignore line: [Building CXX object CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_79a07/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_79a07.dir/build.make CMakeFiles/cmTC_79a07.dir/build]
+        ignore line: [make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-Ncp6R2']
+        ignore line: [Building CXX object CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1047,8 +1056,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92e2f.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_92e2f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccFwDTUJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79a07.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_79a07.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccmV0ka3.s]
         ignore line: [GNU C++20 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1065,14 +1074,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 4e9ac8b201f4ca740be09d0c7a39f82f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92e2f.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFwDTUJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79a07.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccmV0ka3.s]
         ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_92e2f]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92e2f.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_79a07]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79a07.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
@@ -1083,13 +1092,13 @@ events:
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_92e2f' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92e2f.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVTugzd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_92e2f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_79a07' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_79a07.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoEpUvE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_79a07 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccVTugzd.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccoEpUvE.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1105,7 +1114,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_92e2f] ==> ignore
+          arg [cmTC_79a07] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -1117,7 +1126,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1129,9 +1138,9 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVTugzd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_92e2f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVTugzd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_92e2f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVTugzd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_92e2f /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_92e2f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoEpUvE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_79a07 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoEpUvE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_79a07 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoEpUvE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_79a07 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_79a07.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1175,8 +1184,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-vsOkaj"
-      binary: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-vsOkaj"
+      source: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ke7t0Y"
+      binary: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ke7t0Y"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1187,17 +1196,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-vsOkaj'
+        Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ke7t0Y'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1c1c9/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_1c1c9.dir/build.make CMakeFiles/cmTC_1c1c9.dir/build
-        make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-vsOkaj'
-        Building CXX object CMakeFiles/cmTC_1c1c9.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_1c1c9.dir/src.cxx.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-vsOkaj/src.cxx
-        Linking CXX executable cmTC_1c1c9
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c1c9.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_1c1c9.dir/src.cxx.o -o cmTC_1c1c9
-        make[1]: Leaving directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-vsOkaj'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f375f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f375f.dir/build.make CMakeFiles/cmTC_f375f.dir/build
+        make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ke7t0Y'
+        Building CXX object CMakeFiles/cmTC_f375f.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_f375f.dir/src.cxx.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ke7t0Y/src.cxx
+        Linking CXX executable cmTC_f375f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f375f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_f375f.dir/src.cxx.o -o cmTC_f375f
+        make[1]: Leaving directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-ke7t0Y'
         
       exitCode: 0
   -
@@ -1278,6 +1287,78 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/Qt6CoreTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/qt6coretools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/usr/local/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1331,17 +1412,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1430,6 +1511,78 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/Qt6GuiTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/qt6guitools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/usr/local/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1483,17 +1636,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1579,6 +1732,78 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/usr/local/Qt6WidgetsToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1632,17 +1857,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1674,8 +1899,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-oPzsqf"
-      binary: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-oPzsqf"
+      source: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-cntagH"
+      binary: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-cntagH"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1686,17 +1911,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-oPzsqf'
+        Change Dir: '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-cntagH'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4fb4a/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_4fb4a.dir/build.make CMakeFiles/cmTC_4fb4a.dir/build
-        make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-oPzsqf'
-        Building CXX object CMakeFiles/cmTC_4fb4a.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_4fb4a.dir/src.cxx.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-oPzsqf/src.cxx
-        Linking CXX executable cmTC_4fb4a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fb4a.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_4fb4a.dir/src.cxx.o -o cmTC_4fb4a
-        make[1]: Leaving directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-oPzsqf'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fba7e/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_fba7e.dir/build.make CMakeFiles/cmTC_fba7e.dir/build
+        make[1]: Entering directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-cntagH'
+        Building CXX object CMakeFiles/cmTC_fba7e.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_fba7e.dir/src.cxx.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-cntagH/src.cxx
+        Linking CXX executable cmTC_fba7e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fba7e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_fba7e.dir/src.cxx.o -o cmTC_fba7e
+        make[1]: Leaving directory '/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/CMakeScratch/TryCompile-cntagH'
         
       exitCode: 0
   -
@@ -1821,17 +2046,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1873,17 +2098,17 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1900,33 +2125,33 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/gl.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/gl.h"
+      - "/home/mythsnipper/.cargo/bin/GL/gl.h"
       - "/usr/local/sbin/GL/gl.h"
       - "/usr/local/bin/GL/gl.h"
       - "/usr/bin/GL/gl.h"
-      - "/opt/android-sdk/platform-tools/GL/gl.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/GL/gl.h"
       - "/var/lib/flatpak/exports/bin/GL/gl.h"
       - "/usr/lib/jvm/default/bin/GL/gl.h"
       - "/usr/bin/site_perl/GL/gl.h"
       - "/usr/bin/vendor_perl/GL/gl.h"
       - "/usr/bin/core_perl/GL/gl.h"
-      - "/opt/rocm/bin/GL/gl.h"
       - "/usr/local/include/GL/gl.h"
       - "/usr/local/GL/gl.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1970,17 +2195,17 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -1994,33 +2219,33 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/glx.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/glx.h"
+      - "/home/mythsnipper/.cargo/bin/GL/glx.h"
       - "/usr/local/sbin/GL/glx.h"
       - "/usr/local/bin/GL/glx.h"
       - "/usr/bin/GL/glx.h"
-      - "/opt/android-sdk/platform-tools/GL/glx.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/GL/glx.h"
       - "/var/lib/flatpak/exports/bin/GL/glx.h"
       - "/usr/lib/jvm/default/bin/GL/glx.h"
       - "/usr/bin/site_perl/GL/glx.h"
       - "/usr/bin/vendor_perl/GL/glx.h"
       - "/usr/bin/core_perl/GL/glx.h"
-      - "/opt/rocm/bin/GL/glx.h"
       - "/usr/local/include/GL/glx.h"
       - "/usr/local/GL/glx.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2064,17 +2289,17 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -2088,33 +2313,33 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/EGL/egl.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/EGL/egl.h"
+      - "/home/mythsnipper/.cargo/bin/EGL/egl.h"
       - "/usr/local/sbin/EGL/egl.h"
       - "/usr/local/bin/EGL/egl.h"
       - "/usr/bin/EGL/egl.h"
-      - "/opt/android-sdk/platform-tools/EGL/egl.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/EGL/egl.h"
       - "/var/lib/flatpak/exports/bin/EGL/egl.h"
       - "/usr/lib/jvm/default/bin/EGL/egl.h"
       - "/usr/bin/site_perl/EGL/egl.h"
       - "/usr/bin/vendor_perl/EGL/egl.h"
       - "/usr/bin/core_perl/EGL/egl.h"
-      - "/opt/rocm/bin/EGL/egl.h"
       - "/usr/local/include/EGL/egl.h"
       - "/usr/local/EGL/egl.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2158,17 +2383,17 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -2182,33 +2407,33 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GLES2/gl2.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GLES2/gl2.h"
+      - "/home/mythsnipper/.cargo/bin/GLES2/gl2.h"
       - "/usr/local/sbin/GLES2/gl2.h"
       - "/usr/local/bin/GLES2/gl2.h"
       - "/usr/bin/GLES2/gl2.h"
-      - "/opt/android-sdk/platform-tools/GLES2/gl2.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/GLES2/gl2.h"
       - "/var/lib/flatpak/exports/bin/GLES2/gl2.h"
       - "/usr/lib/jvm/default/bin/GLES2/gl2.h"
       - "/usr/bin/site_perl/GLES2/gl2.h"
       - "/usr/bin/vendor_perl/GLES2/gl2.h"
       - "/usr/bin/core_perl/GLES2/gl2.h"
-      - "/opt/rocm/bin/GLES2/gl2.h"
       - "/usr/local/include/GLES2/gl2.h"
       - "/usr/local/GLES2/gl2.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2252,17 +2477,17 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -2276,33 +2501,33 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GLES3/gl3.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GLES3/gl3.h"
+      - "/home/mythsnipper/.cargo/bin/GLES3/gl3.h"
       - "/usr/local/sbin/GLES3/gl3.h"
       - "/usr/local/bin/GLES3/gl3.h"
       - "/usr/bin/GLES3/gl3.h"
-      - "/opt/android-sdk/platform-tools/GLES3/gl3.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/GLES3/gl3.h"
       - "/var/lib/flatpak/exports/bin/GLES3/gl3.h"
       - "/usr/lib/jvm/default/bin/GLES3/gl3.h"
       - "/usr/bin/site_perl/GLES3/gl3.h"
       - "/usr/bin/vendor_perl/GLES3/gl3.h"
       - "/usr/bin/core_perl/GLES3/gl3.h"
-      - "/opt/rocm/bin/GLES3/gl3.h"
       - "/usr/local/include/GLES3/gl3.h"
       - "/usr/local/GLES3/gl3.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2346,17 +2571,17 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -2373,17 +2598,17 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/xmesa.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/xmesa.h"
+      - "/home/mythsnipper/.cargo/bin/GL/xmesa.h"
       - "/usr/local/sbin/GL/xmesa.h"
       - "/usr/local/bin/GL/xmesa.h"
       - "/usr/bin/GL/xmesa.h"
-      - "/opt/android-sdk/platform-tools/GL/xmesa.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/GL/xmesa.h"
       - "/var/lib/flatpak/exports/bin/GL/xmesa.h"
       - "/usr/lib/jvm/default/bin/GL/xmesa.h"
       - "/usr/bin/site_perl/GL/xmesa.h"
       - "/usr/bin/vendor_perl/GL/xmesa.h"
       - "/usr/bin/core_perl/GL/xmesa.h"
-      - "/opt/rocm/bin/GL/xmesa.h"
       - "/usr/local/include/GL/xmesa.h"
       - "/usr/local/GL/xmesa.h"
       - "/usr/include/GL/xmesa.h"
@@ -2402,17 +2627,17 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2456,17 +2681,17 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -2480,33 +2705,33 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/glu.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/glu.h"
+      - "/home/mythsnipper/.cargo/bin/GL/glu.h"
       - "/usr/local/sbin/GL/glu.h"
       - "/usr/local/bin/GL/glu.h"
       - "/usr/bin/GL/glu.h"
-      - "/opt/android-sdk/platform-tools/GL/glu.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/GL/glu.h"
       - "/var/lib/flatpak/exports/bin/GL/glu.h"
       - "/usr/lib/jvm/default/bin/GL/glu.h"
       - "/usr/bin/site_perl/GL/glu.h"
       - "/usr/bin/vendor_perl/GL/glu.h"
       - "/usr/bin/core_perl/GL/glu.h"
-      - "/opt/rocm/bin/GL/glu.h"
       - "/usr/local/include/GL/glu.h"
       - "/usr/local/GL/glu.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2550,17 +2775,17 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2574,33 +2799,33 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libOpenGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2644,16 +2869,18 @@ events:
     names:
       - "GLX"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/libglvnd/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
       - "/usr/local/bin/"
       - "/usr/bin/libglvnd/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/libglvnd/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/libglvnd/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/libglvnd/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/libglvnd/"
@@ -2664,8 +2891,6 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/libglvnd/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/libglvnd/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2691,16 +2916,18 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/libglvnd/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
       - "/usr/local/bin/"
       - "/usr/bin/libglvnd/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/libglvnd/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/libglvnd/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/libglvnd/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/libglvnd/"
@@ -2711,8 +2938,6 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/libglvnd/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/libglvnd/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2721,17 +2946,17 @@ events:
     found: "/usr/lib/libGLX.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2775,16 +3000,18 @@ events:
     names:
       - "EGL"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/libglvnd/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
       - "/usr/local/bin/"
       - "/usr/bin/libglvnd/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/libglvnd/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/libglvnd/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/libglvnd/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/libglvnd/"
@@ -2795,8 +3022,6 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/libglvnd/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/libglvnd/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2822,16 +3047,18 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/libglvnd/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/libglvnd/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/libglvnd/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/libglvnd/"
       - "/usr/local/bin/"
       - "/usr/bin/libglvnd/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/libglvnd/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/libglvnd/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/libglvnd/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/libglvnd/"
@@ -2842,8 +3069,6 @@ events:
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/libglvnd/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/libglvnd/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/libglvnd/"
       - "/usr/local/lib/"
       - "/usr/local/libglvnd/"
@@ -2852,17 +3077,17 @@ events:
     found: "/usr/lib/libEGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2906,17 +3131,17 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -2930,33 +3155,33 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3001,17 +3226,17 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3025,17 +3250,17 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3048,33 +3273,33 @@ events:
       - "/opt/lib/"
       - "/opt/"
       - "/usr/lib/X11/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3119,17 +3344,17 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3146,33 +3371,33 @@ events:
       - "/usr/openwin/lib/"
       - "/usr/shlib/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libGLU.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3214,17 +3439,17 @@ events:
     names:
       - "vulkan/vulkan.h"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/include/"
       - "/usr/local/"
       - "/usr/include/"
@@ -3238,33 +3463,33 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/vulkan/vulkan.h"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/vulkan/vulkan.h"
+      - "/home/mythsnipper/.cargo/bin/vulkan/vulkan.h"
       - "/usr/local/sbin/vulkan/vulkan.h"
       - "/usr/local/bin/vulkan/vulkan.h"
       - "/usr/bin/vulkan/vulkan.h"
-      - "/opt/android-sdk/platform-tools/vulkan/vulkan.h"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/vulkan/vulkan.h"
       - "/var/lib/flatpak/exports/bin/vulkan/vulkan.h"
       - "/usr/lib/jvm/default/bin/vulkan/vulkan.h"
       - "/usr/bin/site_perl/vulkan/vulkan.h"
       - "/usr/bin/vendor_perl/vulkan/vulkan.h"
       - "/usr/bin/core_perl/vulkan/vulkan.h"
-      - "/opt/rocm/bin/vulkan/vulkan.h"
       - "/usr/local/include/vulkan/vulkan.h"
       - "/usr/local/vulkan/vulkan.h"
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3306,17 +3531,17 @@ events:
     names:
       - "vulkan"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
       - "/usr/lib/"
@@ -3330,33 +3555,33 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/lib/"
       - "/usr/local/"
     found: "/usr/lib/libvulkan.so"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3398,17 +3623,17 @@ events:
     names:
       - "glslc"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3427,22 +3652,25 @@ events:
       - "/opt/sbin/"
       - "/opt/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/glslc"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/glslc"
+      - "/home/mythsnipper/.cargo/bin/glslc"
       - "/usr/local/sbin/glslc"
       - "/usr/local/bin/glslc"
     found: "/usr/bin/glslc"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3482,17 +3710,17 @@ events:
     names:
       - "glslangValidator"
     candidate_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/home/mythsnipper/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
-      - "/opt/android-sdk/platform-tools/"
-      - "/home/mythsnipper/.local/share/flatpak/exports/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/opt/rocm/bin/"
       - "/usr/local/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/"
@@ -3511,22 +3739,25 @@ events:
       - "/opt/sbin/"
       - "/opt/"
     searched_directories:
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/glslangValidator"
+      - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/glslangValidator"
+      - "/home/mythsnipper/.cargo/bin/glslangValidator"
       - "/usr/local/sbin/glslangValidator"
       - "/usr/local/bin/glslangValidator"
     found: "/usr/bin/glslangValidator"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3622,6 +3853,78 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6DBusToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6dbustools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6DBusTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6dbustools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6DBusTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6dbustools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6DBusToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6dbustools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6DBusTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6dbustools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6DBusTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6dbustools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/Qt6DBusToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/qt6dbustools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/Qt6DBusTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/qt6dbustools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/Qt6DBusTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/qt6dbustools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/usr/local/Qt6DBusToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -3675,17 +3978,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3807,17 +4110,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3934,17 +4237,17 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4053,17 +4356,239 @@ events:
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/usr/lib/cmake/Qt6/Qt6Config.cmake:267 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    name: "Qt6OpenGL"
+    configs:
+      -
+        filename: "Qt6OpenGL.cps"
+        kind: "cps"
+      -
+        filename: "qt6opengl.cps"
+        kind: "cps"
+      -
+        filename: "Qt6OpenGLConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6opengl-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6OpenGL"
+      search_paths:
+        - "/usr/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/Qt6OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/qt6opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/lib/cps/Qt6OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/lib/cps/qt6opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/share/cps/Qt6OpenGL.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/share/cps/qt6opengl.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/qt6opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenGLWidgets/qt6opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenGLPrivate/Qt6OpenGLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenGLPrivate/qt6opengl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/usr/lib/cmake/Qt6/Qt6Config.cmake:267 (find_package)"
+      - "CMakeLists.txt:11 (find_package)"
+    name: "Qt6OpenGLWidgets"
+    configs:
+      -
+        filename: "Qt6OpenGLWidgets.cps"
+        kind: "cps"
+      -
+        filename: "qt6openglwidgets.cps"
+        kind: "cps"
+      -
+        filename: "Qt6OpenGLWidgetsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6openglwidgets-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6OpenGLWidgets"
+      search_paths:
+        - "/usr/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/Qt6OpenGLWidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/qt6openglwidgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/lib/cps/Qt6OpenGLWidgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/lib/cps/qt6openglwidgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/share/cps/Qt6OpenGLWidgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/pkgRedirects/share/cps/qt6openglwidgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenGLWidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/qt6openglwidgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake"
+      mode: "config"
+      version: "6.11.2"
+    search_context:
+      ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4082,6 +4607,14 @@ events:
     components:
       -
         name: "Widgets"
+        required: true
+        found: false
+      -
+        name: "OpenGL"
+        required: true
+        found: false
+      -
+        name: "OpenGLWidgets"
         required: true
         found: false
     configs:
@@ -4145,6 +4678,78 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/lib/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/Qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/mythsnipper/.cargo/share/cps/qt6.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/usr/local/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -4191,6 +4796,230 @@ events:
       -
         path: "/usr/share/cps/qt6.cps"
         mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DRenderPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DRenderPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DRender/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DRender/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene3DPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene3DPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene3D/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene3D/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene2DPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene2DPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene2D/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickScene2D/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickRenderPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickRenderPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickRender/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickRender/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickLogicPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickLogicPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickLogic/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickLogic/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickInputPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickInputPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickInput/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickInput/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickExtrasPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickExtrasPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickExtras/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickExtras/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickAnimationPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickAnimationPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickAnimation/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuickAnimation/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuick/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DQuick/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DLogicPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DLogicPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DLogic/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DLogic/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DInputPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DInputPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DInput/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DInput/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DExtrasPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DExtrasPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DExtras/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DExtras/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DCorePrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DCorePrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DCore/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DCore/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DAnimationPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DAnimationPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DAnimation/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt63DAnimation/qt6-config.cmake"
+        mode: "config"
         reason: "no_exist"
       -
         path: "/usr/lib/cmake/Qt6XmlPrivate/Qt6Config.cmake"
@@ -4649,6 +5478,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6TaskTree/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6TaskTree/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6SvgWidgets/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -4761,6 +5598,38 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6SerialPortPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialPortPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialPort/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialPort/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialBusPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialBusPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialBus/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6SerialBus/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6SensorsQuickPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -4838,6 +5707,54 @@ events:
         reason: "no_exist"
       -
         path: "/usr/lib/cmake/Qt6Scxml/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RepParser/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RepParser/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsQmlPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsQml/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsQml/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjectsPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjects/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6RemoteObjects/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -5377,6 +6294,38 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysicsPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysicsPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysicsHelpersPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysicsHelpersPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysicsHelpers/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysicsHelpers/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysics/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Quick3DPhysics/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6Quick3DParticlesPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -5761,6 +6710,94 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6ProtobufWellKnownTypesPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufWellKnownTypesPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufWellKnownTypes/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufWellKnownTypes/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQuickPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQuickPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQuick/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQuick/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtGuiTypesPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtGuiTypesPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtGuiTypes/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtGuiTypes/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtCoreTypesPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtCoreTypesPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtCoreTypes/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufQtCoreTypes/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6ProtobufPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Protobuf/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Protobuf/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6PrintSupportPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -5889,6 +6926,46 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6OpenApiTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenApiTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenApiCommon/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenApiCommon/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenApi/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6OpenApi/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6NfcPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6NfcPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Nfc/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Nfc/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6NetworkPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -5969,6 +7046,54 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieVectorImageHelpersPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieVectorImageHelpers/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieVectorImageHelpers/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieVectorImageGeneratorPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottieTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottiePrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LottiePrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Lottie/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Lottie/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6LocationPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -5998,6 +7123,14 @@ events:
         reason: "no_exist"
       -
         path: "/usr/lib/cmake/Qt6Linguist/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LanguageServerPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6LanguageServerPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6169,11 +7302,11 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/usr/lib/cmake/Qt6Keychain/Qt6Config.cmake"
+        path: "/usr/lib/cmake/Qt6JsonRpcPrivate/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/usr/lib/cmake/Qt6Keychain/qt6-config.cmake"
+        path: "/usr/lib/cmake/Qt6JsonRpcPrivate/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6198,6 +7331,22 @@ events:
         reason: "no_exist"
       -
         path: "/usr/lib/cmake/Qt6HunspellInputMethod/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6HttpServerPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6HttpServerPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6HttpServer/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6HttpServer/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6246,6 +7395,78 @@ events:
         reason: "no_exist"
       -
         path: "/usr/lib/cmake/Qt6Gui/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcQuickPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcQuickPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcQuick/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcQuick/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GrpcPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Grpc/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Grpc/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GraphsWidgetsPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GraphsWidgetsPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GraphsWidgets/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GraphsWidgets/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GraphsPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6GraphsPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Graphs/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Graphs/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6321,6 +7542,38 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6DataVisualizationQmlPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualizationQmlPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualizationQml/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualizationQml/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualizationPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualizationPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualization/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6DataVisualization/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6DBusTools/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -6385,6 +7638,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6Connectivity/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Connectivity/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6Concurrent/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -6425,11 +7686,43 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/usr/lib/cmake/Qt6CanvasPainterTools/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6CanvasPainterTools/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6CanvasPainterPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6CanvasPainterPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6CanvasPainter/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6CanvasPainter/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/usr/lib/cmake/Qt6BundledResonanceAudio/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/usr/lib/cmake/Qt6BundledResonanceAudio/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6BundledPhysX/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6BundledPhysX/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -6448,23 +7741,39 @@ events:
         path: "/usr/lib/cmake/Qt6BuildInternals/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6BluetoothPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6BluetoothPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Bluetooth/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6Bluetooth/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
     found:
       path: "/usr/lib/cmake/Qt6/Qt6Config.cmake"
       mode: "config"
       version: "6.11.2"
     search_context:
       ENV{PATH}:
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/mythsnipper/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/home/mythsnipper/.cargo/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/bin"
-        - "/opt/android-sdk/platform-tools"
-        - "/home/mythsnipper/.local/share/flatpak/exports/bin"
         - "/var/lib/flatpak/exports/bin"
         - "/usr/lib/jvm/default/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/opt/rocm/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"

@@ -9,6 +9,17 @@
                 "cwd": "${workspaceFolder}"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "CMake: Regenerate Build Files",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S", ".",
+                "-B", "build"
+            ],
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }

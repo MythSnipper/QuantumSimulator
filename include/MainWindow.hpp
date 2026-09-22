@@ -7,10 +7,14 @@ public:
     MainWindow();
 
 private:
-    void createToolbar();
-    void createCentralWidget();
+    QToolBar* createToolbarDock();
+    QDockWidget* createRendererDock();
+    QDockWidget* createTimelineDock();
+    QDockWidget* createSceneDock();
+    QDockWidget* createPropertiesDock();
 
-    QWidget* createLeftPanel();
+    QWidget* createRenderer();
+    QWidget* createTimeline();
     QWidget* createScenePanel();
     QWidget* createPropertiesPanel();
 };

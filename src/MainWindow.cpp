@@ -1,5 +1,7 @@
 #include "MainWindow.hpp"
 
+#include "GLRenderer.hpp"
+
 #include <QStatusBar>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -7,104 +9,156 @@
 #include <QLabel>
 #include <QSlider>
 #include <QToolBar>
+#include <QDockWidget>
 #include <QWidget>
 
+auto QDFEATURES = QDockWidget::DockWidgetMovable |
+        QDockWidget::DockWidgetFloatable |
+        QDockWidget::DockWidgetClosable;
+
+        
 MainWindow::MainWindow(){
     resize(1280, 720);
 
-    createToolbar();
-    createCentralWidget();
+    setDockNestingEnabled(true);
+
+    addToolBar(Qt::TopToolBarArea, createToolbarDock());
+    
+    QDockWidget* rendererDock = createRendererDock();
+    QDockWidget* timelineDock = createTimelineDock();
+    QDockWidget* sceneDock = createSceneDock();
+    QDockWidget* propertiesDock = createPropertiesDock();
+
+    addDockWidget(Qt::LeftDockWidgetArea, rendererDock);
+
+    splitDockWidget(rendererDock, sceneDock, Qt::Horizontal);
+    resizeDocks({rendererDock, sceneDock}, {3, 2}, Qt::Horizontal);
+
+    splitDockWidget(rendererDock, timelineDock, Qt::Vertical);
+    resizeDocks({rendererDock, timelineDock}, {4, 1}, Qt::Vertical);
+
+    splitDockWidget(sceneDock, propertiesDock, Qt::Horizontal);
+    resizeDocks({sceneDock, propertiesDock}, {1, 1}, Qt::Horizontal);
+
 }
 
-void MainWindow::createToolbar(){
-    QToolBar* toolbar = new QToolBar(this);
+
+QToolBar* MainWindow::createToolbarDock(){
+    QToolBar* toolbar = new QToolBar("Toolbar", this);
     toolbar->setObjectName("toolbar");
+
+    toolbar->setMovable(true);
+    toolbar->setFloatable(true);
 
     toolbar->addAction("Add Particle");
     toolbar->addAction("Add Potential");
     toolbar->addAction("Add Field");
 
-    addToolBar(toolbar);
+    return toolbar;
 }
 
-void MainWindow::createCentralWidget(){
-    QWidget* central = new QWidget(this);
-    central->setStyleSheet("background-color: #202020;");
-    QHBoxLayout* centralLayout = new QHBoxLayout(central); //left panel and right panels
+QDockWidget* MainWindow::createRendererDock(){
+    QDockWidget* dock = new QDockWidget("Renderer", this);
+    GLRenderer* renderer = new GLRenderer();
 
-    QWidget* leftPanel = this->createLeftPanel();
+    dock->setWidget(renderer);
 
-    QWidget* scenePanel = this->createScenePanel();
-
-    QWidget* propertiesPanel = this->createPropertiesPanel();
-
-    centralLayout->addWidget(leftPanel, 4);
-    centralLayout->addWidget(scenePanel, 1);
-    centralLayout->addWidget(propertiesPanel, 1);
-
-    setCentralWidget(central);
-}
-
-//left panel containing rendering window and timeline
-QWidget* MainWindow::createLeftPanel(){
-    QWidget* leftPanel = new QWidget();
-    leftPanel->setObjectName("leftPanel");
-    leftPanel->setStyleSheet(
-        "#leftPanel{"
-        "   border: 2px solid gray;"
-        "}"
+    dock->setFeatures(
+        QDFEATURES
     );
-    QVBoxLayout* leftPanelLayout = new QVBoxLayout(leftPanel);
 
-    // renderer window on the left panel
+    dock->setAllowedAreas(Qt::AllDockWidgetAreas);
+
+    return dock;
+}
+
+QDockWidget* MainWindow::createTimelineDock(){
+    QDockWidget* dock = new QDockWidget("Timeline", this);
+
+    dock->setWidget(createTimeline());
+
+    dock->setFeatures(
+        QDFEATURES
+    );
+
+    dock->setAllowedAreas(Qt::AllDockWidgetAreas);
+
+    return dock;
+}
+
+QDockWidget* MainWindow::createSceneDock(){
+    QDockWidget* dock = new QDockWidget("Scene", this);
+
+    dock->setWidget(createScenePanel());
+
+    dock->setFeatures(
+        QDFEATURES
+    );
+
+    dock->setAllowedAreas(Qt::AllDockWidgetAreas);
+
+    return dock;
+}
+
+QDockWidget* MainWindow::createPropertiesDock(){
+    QDockWidget* dock = new QDockWidget("Properties", this);
+
+    dock->setWidget(createPropertiesPanel());
+
+    dock->setFeatures(
+        QDFEATURES
+    );
+
+    dock->setAllowedAreas(Qt::AllDockWidgetAreas);
+
+    return dock;
+}
+
+QWidget* MainWindow::createRenderer(){
     QWidget* renderer = new QWidget();
     renderer->setStyleSheet(
         "border: 2px solid blue;"
-        "background-color: #d864ed;"
+        "background-color: #64ed8b;"
     );
 
-    // timeline
-    QWidget* timeline;
-    {
-        timeline = new QWidget();
-        QVBoxLayout* layout = new QVBoxLayout(timeline);
-
-        // slider and time display
-        QWidget* slidertime = new QWidget();
-        QHBoxLayout* slidertimeLayout = new QHBoxLayout(slidertime);
-
-        QSlider* slider = new QSlider(Qt::Horizontal);
-        QLabel* time = new QLabel("0.00 s");
-
-        slidertimeLayout->addWidget(slider, 1);
-        slidertimeLayout->addWidget(time);
-
-        // control buttons
-        QWidget* buttons = new QWidget();
-        QHBoxLayout* buttonsLayout = new QHBoxLayout(buttons);
-
-        QPushButton* previous = new QPushButton("◀");
-        QPushButton* play = new QPushButton("▶");
-        QPushButton* pause = new QPushButton("▶|");
-        QWidget* none = new QWidget();
-
-        buttonsLayout->addWidget(previous);
-        buttonsLayout->addWidget(play);
-        buttonsLayout->addWidget(pause);
-        buttonsLayout->addWidget(none, 1);
-
-
-        layout->addWidget(slidertime);
-        layout->addWidget(buttons);
-    }
-
-    leftPanelLayout->addWidget(renderer, 4);
-    leftPanelLayout->addWidget(timeline, 1);
-
-    return leftPanel;
+    return renderer;
 }
 
-//scene panel
+QWidget* MainWindow::createTimeline(){
+    // timeline
+    QWidget* timeline = new QWidget();
+    QVBoxLayout* layout = new QVBoxLayout(timeline);
+
+    // slider and time display
+    QWidget* slidertime = new QWidget();
+    QHBoxLayout* slidertimeLayout = new QHBoxLayout(slidertime);
+
+    QSlider* slider = new QSlider(Qt::Horizontal);
+    QLabel* time = new QLabel("0.00 s");
+
+    slidertimeLayout->addWidget(slider, 1);
+    slidertimeLayout->addWidget(time);
+
+    // control buttons
+    QWidget* buttons = new QWidget();
+    QHBoxLayout* buttonsLayout = new QHBoxLayout(buttons);
+
+    QPushButton* previous = new QPushButton("◀");
+    QPushButton* play = new QPushButton("▶");
+    QPushButton* pause = new QPushButton("▶|");
+    QWidget* none = new QWidget();
+
+    buttonsLayout->addWidget(previous);
+    buttonsLayout->addWidget(play);
+    buttonsLayout->addWidget(pause);
+    buttonsLayout->addWidget(none, 1);
+
+    layout->addWidget(slidertime);
+    layout->addWidget(buttons);
+
+    return timeline;
+}
+
 QWidget* MainWindow::createScenePanel(){
     QWidget* scenePanel = new QWidget();
     scenePanel->setObjectName("scenePanel");
@@ -124,11 +178,10 @@ QWidget* MainWindow::createScenePanel(){
 
     scenePanelLayout->addWidget(scene);
     scenePanelLayout->addWidget(objects, 1);
-
+    
     return scenePanel;
 }
 
-//properties panel
 QWidget* MainWindow::createPropertiesPanel(){
     QWidget* propertiesPanel = new QWidget();
     propertiesPanel->setObjectName("propertiesPanel");

@@ -72,7 +72,7 @@ QuantumEngine_autogen/timestamp: /usr/lib/qt6/moc
 QuantumEngine_autogen/timestamp: /usr/lib/qt6/uic
 QuantumEngine_autogen/timestamp: CMakeFiles/QuantumEngine_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target QuantumEngine"
-	/usr/bin/cmake -E cmake_autogen /home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/QuantumEngine_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/QuantumEngine_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/mythsnipper/Dev/cpp/QuantumSimulator/build/QuantumEngine_autogen/timestamp
 
 CMakeFiles/QuantumEngine_autogen.dir/codegen:

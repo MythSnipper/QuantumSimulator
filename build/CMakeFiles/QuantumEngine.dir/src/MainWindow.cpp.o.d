@@ -363,6 +363,19 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /home/mythsnipper/Dev/cpp/QuantumSimulator/include/GLRenderer.hpp \
+ /usr/include/qt6/QtOpenGLWidgets/QOpenGLWidget \
+ /usr/include/qt6/QtOpenGLWidgets/qopenglwidget.h \
+ /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+ /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtGui/QSurfaceFormat \
+ /usr/include/qt6/QtGui/qsurfaceformat.h /usr/include/qt6/QtGui/qopengl.h \
+ /usr/include/GL/gl.h /usr/include/qt6/QtGui/qopenglext.h \
+ /usr/include/inttypes.h /usr/include/qt6/QtGui/QOpenGLFunctions \
+ /usr/include/qt6/QtGui/qopenglfunctions.h \
+ /usr/include/qt6/QtGui/qopenglcontext.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtGui/qopenglcontext_platform.h \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
@@ -381,4 +394,7 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtWidgets/QSlider /usr/include/qt6/QtWidgets/qslider.h \
  /usr/include/qt6/QtWidgets/qabstractslider.h \
  /usr/include/qt6/QtWidgets/QToolBar \
- /usr/include/qt6/QtWidgets/qtoolbar.h /usr/include/qt6/QtWidgets/QWidget
+ /usr/include/qt6/QtWidgets/qtoolbar.h \
+ /usr/include/qt6/QtWidgets/QDockWidget \
+ /usr/include/qt6/QtWidgets/qdockwidget.h \
+ /usr/include/qt6/QtWidgets/QWidget

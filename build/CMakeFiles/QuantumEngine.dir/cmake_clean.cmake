@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "QuantumEngine_autogen"
   "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o"
+  "CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o.d"
   "CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o"
   "CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o.d"
   "CMakeFiles/QuantumEngine.dir/src/main.cpp.o"
