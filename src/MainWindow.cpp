@@ -18,6 +18,7 @@ MainWindow::MainWindow(){
 
 void MainWindow::createToolbar(){
     QToolBar* toolbar = new QToolBar(this);
+    toolbar->setObjectName("toolbar");
 
     toolbar->addAction("Add Particle");
     toolbar->addAction("Add Potential");
@@ -28,9 +29,7 @@ void MainWindow::createToolbar(){
 
 void MainWindow::createCentralWidget(){
     QWidget* central = new QWidget(this);
-    central->setStyleSheet(
-        "border: 1px solid red;"
-    );
+    central->setStyleSheet("background-color: #202020;");
     QHBoxLayout* centralLayout = new QHBoxLayout(central); //left panel and right panels
 
     QWidget* leftPanel = this->createLeftPanel();
@@ -49,13 +48,18 @@ void MainWindow::createCentralWidget(){
 //left panel containing rendering window and timeline
 QWidget* MainWindow::createLeftPanel(){
     QWidget* leftPanel = new QWidget();
-    leftPanel->setStyleSheet("border: 1px solid orange;");
+    leftPanel->setObjectName("leftPanel");
+    leftPanel->setStyleSheet(
+        "#leftPanel{"
+        "   border: 2px solid gray;"
+        "}"
+    );
     QVBoxLayout* leftPanelLayout = new QVBoxLayout(leftPanel);
 
     // renderer window on the left panel
     QWidget* renderer = new QWidget();
     renderer->setStyleSheet(
-        "border: 1px solid green;"
+        "border: 2px solid blue;"
         "background-color: #d864ed;"
     );
 
@@ -63,7 +67,6 @@ QWidget* MainWindow::createLeftPanel(){
     QWidget* timeline;
     {
         timeline = new QWidget();
-        timeline->setStyleSheet("border: 1px solid green;");
         QVBoxLayout* layout = new QVBoxLayout(timeline);
 
         // slider and time display
@@ -104,14 +107,19 @@ QWidget* MainWindow::createLeftPanel(){
 //scene panel
 QWidget* MainWindow::createScenePanel(){
     QWidget* scenePanel = new QWidget();
-    scenePanel->setStyleSheet("border: 1px solid orange;");
+    scenePanel->setObjectName("scenePanel");
+    scenePanel->setStyleSheet(
+        "#scenePanel{"
+        "   border: 2px solid gray;"
+        "}"
+    );
     QVBoxLayout* scenePanelLayout = new QVBoxLayout(scenePanel);
 
     QLabel* scene = new QLabel("Scene");
-    scene->setStyleSheet("border: 1px solid green;");
+    scene->setStyleSheet("border: 1px solid blue;");
 
     QLabel* objects = new QLabel("objects listed here");
-    objects->setStyleSheet("border: 1px solid green;");
+    objects->setStyleSheet("border: 1px solid blue;");
     objects->setAlignment(Qt::AlignLeft | Qt::AlignTop);
 
     scenePanelLayout->addWidget(scene);
@@ -120,18 +128,22 @@ QWidget* MainWindow::createScenePanel(){
     return scenePanel;
 }
 
-
 //properties panel
 QWidget* MainWindow::createPropertiesPanel(){
     QWidget* propertiesPanel = new QWidget();
-    propertiesPanel->setStyleSheet("border: 1px solid orange;");
+    propertiesPanel->setObjectName("propertiesPanel");
+    propertiesPanel->setStyleSheet(
+        "#propertiesPanel{"
+        "   border: 2px solid gray;"
+        "}"
+    );
     QVBoxLayout* propertiesPanelLayout = new QVBoxLayout(propertiesPanel);
 
     QLabel* properties = new QLabel("Properties");
-    properties->setStyleSheet("border: 1px solid green;");
+    properties->setStyleSheet("border: 1px solid blue;");
 
-    QLabel* propertieslisted = new QLabel("position\nvelocity\nmass\n...");
-    propertieslisted->setStyleSheet("border: 1px solid green;");
+    QLabel* propertieslisted = new QLabel("properties listed here");
+    propertieslisted->setStyleSheet("border: 1px solid blue;");
     propertieslisted->setAlignment(Qt::AlignLeft | Qt::AlignTop);
 
     propertiesPanelLayout->addWidget(properties);
