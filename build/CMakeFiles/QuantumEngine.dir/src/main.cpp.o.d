@@ -1,6 +1,8 @@
 CMakeFiles/QuantumEngine.dir/src/main.cpp.o: \
  /home/mythsnipper/Dev/cpp/QuantumSimulator/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/stdc-predef.h \
+ /home/mythsnipper/Dev/cpp/QuantumSimulator/include/main.hpp \
+ /usr/include/qt6/QtWidgets/QApplication \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -374,4 +376,14 @@ CMakeFiles/QuantumEngine.dir/src/main.cpp.o: \
  /usr/include/qt6/QtGui/qfontmetrics.h /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h
+ /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtCore/QByteArray /usr/include/qt6/QtGui/QCloseEvent \
+ /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtCore/qurl.h /usr/include/qt6/QtGui/qeventpoint.h \
+ /usr/include/qt6/QtGui/qvector2d.h /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/QObject \
+ /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/QSize \
+ /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtGui/qscreen_platform.h

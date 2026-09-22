@@ -363,6 +363,27 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtCore/QByteArray /usr/include/qt6/QtGui/QCloseEvent \
+ /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/qt6/QtCore/qiodevice.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtGui/qeventpoint.h /usr/include/qt6/QtGui/qvector2d.h \
+ /usr/include/qt6/QtGui/qvectornd.h \
+ /usr/include/qt6/QtGui/qpointingdevice.h \
+ /usr/include/qt6/QtGui/qinputdevice.h /usr/include/qt6/QtGui/qscreen.h \
+ /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/QObject \
+ /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/QSize \
+ /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtGui/qscreen_platform.h \
+ /usr/include/qt6/QtGui/qguiapplication.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtGui/qguiapplication_platform.h \
  /home/mythsnipper/Dev/cpp/QuantumSimulator/include/GLRenderer.hpp \
  /usr/include/qt6/QtOpenGLWidgets/QOpenGLWidget \
  /usr/include/qt6/QtOpenGLWidgets/qopenglwidget.h \
@@ -371,12 +392,20 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtGui/QSurfaceFormat \
  /usr/include/qt6/QtGui/qsurfaceformat.h /usr/include/qt6/QtGui/qopengl.h \
  /usr/include/GL/gl.h /usr/include/qt6/QtGui/qopenglext.h \
- /usr/include/inttypes.h /usr/include/qt6/QtGui/QOpenGLFunctions \
- /usr/include/qt6/QtGui/qopenglfunctions.h \
+ /usr/include/inttypes.h \
+ /usr/include/qt6/QtOpenGL/QOpenGLFunctions_3_3_Core \
+ /usr/include/qt6/QtOpenGL/qopenglfunctions_3_3_core.h \
+ /usr/include/qt6/QtOpenGL/qtopenglglobal.h \
+ /usr/include/qt6/QtOpenGL/qtopenglexports.h \
+ /usr/include/qt6/QtOpenGL/QOpenGLVersionProfile \
+ /usr/include/qt6/QtOpenGL/qopenglversionprofile.h \
+ /usr/include/qt6/QtOpenGL/QOpenGLVersionFunctions \
+ /usr/include/qt6/QtOpenGL/qopenglversionfunctions.h \
  /usr/include/qt6/QtGui/qopenglcontext.h \
- /usr/include/qt6/QtCore/qnativeinterface.h \
  /usr/include/qt6/QtGui/qopenglcontext_platform.h \
- /usr/include/qt6/QtWidgets/QStatusBar \
+ /usr/include/c++/16/iostream /usr/include/qt6/QtWidgets/QDockWidget \
+ /usr/include/qt6/QtWidgets/qdockwidget.h \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
@@ -389,12 +418,12 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
  /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
- /usr/include/qt6/QtCore/qiodevice.h \
- /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtGui/qtextdocument.h \
  /usr/include/qt6/QtWidgets/QSlider /usr/include/qt6/QtWidgets/qslider.h \
  /usr/include/qt6/QtWidgets/qabstractslider.h \
  /usr/include/qt6/QtWidgets/QToolBar \
  /usr/include/qt6/QtWidgets/qtoolbar.h \
- /usr/include/qt6/QtWidgets/QDockWidget \
- /usr/include/qt6/QtWidgets/qdockwidget.h \
- /usr/include/qt6/QtWidgets/QWidget
+ /usr/include/qt6/QtWidgets/QMenuBar \
+ /usr/include/qt6/QtWidgets/qmenubar.h /usr/include/qt6/QtWidgets/qmenu.h \
+ /usr/include/qt6/QtWidgets/QMenu /usr/include/qt6/QtCore/QSettings \
+ /usr/include/qt6/QtCore/qsettings.h
