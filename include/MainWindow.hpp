@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include <QByteArray>
 #include <QCloseEvent>
+#include <QOpenGLWidget>
 
 class MainWindow : public QMainWindow{
 public:
@@ -33,7 +34,7 @@ private:
     QDockWidget* createSceneDock();
     QDockWidget* createPropertiesDock();
 
-    QWidget* createRenderer();
+    QOpenGLWidget* createRenderer();
     QWidget* createTimeline();
     QWidget* createScenePanel();
     QWidget* createPropertiesPanel();

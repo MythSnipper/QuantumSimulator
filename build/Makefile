@@ -179,30 +179,6 @@ QuantumEngine_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.s
 .PHONY : QuantumEngine_autogen/mocs_compilation.cpp.s
 
-src/GLRenderer.o: src/GLRenderer.cpp.o
-.PHONY : src/GLRenderer.o
-
-# target to build an object file
-src/GLRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o
-.PHONY : src/GLRenderer.cpp.o
-
-src/GLRenderer.i: src/GLRenderer.cpp.i
-.PHONY : src/GLRenderer.i
-
-# target to preprocess a source file
-src/GLRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.i
-.PHONY : src/GLRenderer.cpp.i
-
-src/GLRenderer.s: src/GLRenderer.cpp.s
-.PHONY : src/GLRenderer.s
-
-# target to generate assembly for a file
-src/GLRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.s
-.PHONY : src/GLRenderer.cpp.s
-
 src/MainWindow.o: src/MainWindow.cpp.o
 .PHONY : src/MainWindow.o
 
@@ -226,6 +202,30 @@ src/MainWindow.s: src/MainWindow.cpp.s
 src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
+
+src/QT_GLRenderer.o: src/QT_GLRenderer.cpp.o
+.PHONY : src/QT_GLRenderer.o
+
+# target to build an object file
+src/QT_GLRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o
+.PHONY : src/QT_GLRenderer.cpp.o
+
+src/QT_GLRenderer.i: src/QT_GLRenderer.cpp.i
+.PHONY : src/QT_GLRenderer.i
+
+# target to preprocess a source file
+src/QT_GLRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.i
+.PHONY : src/QT_GLRenderer.cpp.i
+
+src/QT_GLRenderer.s: src/QT_GLRenderer.cpp.s
+.PHONY : src/QT_GLRenderer.s
+
+# target to generate assembly for a file
+src/QT_GLRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.s
+.PHONY : src/QT_GLRenderer.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -265,12 +265,12 @@ help:
 	@echo "... QuantumEngine_autogen/mocs_compilation.o"
 	@echo "... QuantumEngine_autogen/mocs_compilation.i"
 	@echo "... QuantumEngine_autogen/mocs_compilation.s"
-	@echo "... src/GLRenderer.o"
-	@echo "... src/GLRenderer.i"
-	@echo "... src/GLRenderer.s"
 	@echo "... src/MainWindow.o"
 	@echo "... src/MainWindow.i"
 	@echo "... src/MainWindow.s"
+	@echo "... src/QT_GLRenderer.o"
+	@echo "... src/QT_GLRenderer.i"
+	@echo "... src/QT_GLRenderer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

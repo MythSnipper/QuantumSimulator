@@ -384,7 +384,6 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
  /usr/include/qt6/QtGui/qguiapplication_platform.h \
- /home/mythsnipper/Dev/cpp/QuantumSimulator/include/GLRenderer.hpp \
  /usr/include/qt6/QtOpenGLWidgets/QOpenGLWidget \
  /usr/include/qt6/QtOpenGLWidgets/qopenglwidget.h \
  /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
@@ -393,6 +392,7 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtGui/qsurfaceformat.h /usr/include/qt6/QtGui/qopengl.h \
  /usr/include/GL/gl.h /usr/include/qt6/QtGui/qopenglext.h \
  /usr/include/inttypes.h \
+ /home/mythsnipper/Dev/cpp/QuantumSimulator/include/QT_GLRenderer.hpp \
  /usr/include/qt6/QtOpenGL/QOpenGLFunctions_3_3_Core \
  /usr/include/qt6/QtOpenGL/qopenglfunctions_3_3_core.h \
  /usr/include/qt6/QtOpenGL/qtopenglglobal.h \

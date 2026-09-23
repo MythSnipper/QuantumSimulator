@@ -121,26 +121,26 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mythsnipper/Dev/cpp/QuantumSimulator/src/MainWindow.cpp -o CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.s
 
-CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o: CMakeFiles/QuantumEngine.dir/flags.make
-CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/QuantumSimulator/src/GLRenderer.cpp
-CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o: CMakeFiles/QuantumEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o -MF CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o.d -o CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/src/GLRenderer.cpp
+CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: CMakeFiles/QuantumEngine.dir/flags.make
+CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/QuantumSimulator/src/QT_GLRenderer.cpp
+CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: CMakeFiles/QuantumEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o -MF CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o.d -o CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o -c /home/mythsnipper/Dev/cpp/QuantumSimulator/src/QT_GLRenderer.cpp
 
-CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mythsnipper/Dev/cpp/QuantumSimulator/src/GLRenderer.cpp > CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.i
+CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mythsnipper/Dev/cpp/QuantumSimulator/src/QT_GLRenderer.cpp > CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.i
 
-CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mythsnipper/Dev/cpp/QuantumSimulator/src/GLRenderer.cpp -o CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.s
+CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mythsnipper/Dev/cpp/QuantumSimulator/src/QT_GLRenderer.cpp -o CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.s
 
 # Object files for target QuantumEngine
 QuantumEngine_OBJECTS = \
 "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/QuantumEngine.dir/src/main.cpp.o" \
 "CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o" \
-"CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o"
+"CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o"
 
 # External object files for target QuantumEngine
 QuantumEngine_EXTERNAL_OBJECTS =
@@ -148,7 +148,7 @@ QuantumEngine_EXTERNAL_OBJECTS =
 QuantumEngine: CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o
 QuantumEngine: CMakeFiles/QuantumEngine.dir/src/main.cpp.o
 QuantumEngine: CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o
-QuantumEngine: CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o
+QuantumEngine: CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o
 QuantumEngine: CMakeFiles/QuantumEngine.dir/build.make
 QuantumEngine: CMakeFiles/QuantumEngine.dir/compiler_depend.ts
 QuantumEngine: /usr/lib/libQt6OpenGLWidgets.so.6.11.2

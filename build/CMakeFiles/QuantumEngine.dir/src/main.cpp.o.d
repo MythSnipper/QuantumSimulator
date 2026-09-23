@@ -386,4 +386,12 @@ CMakeFiles/QuantumEngine.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/QList /usr/include/qt6/QtCore/QObject \
  /usr/include/qt6/QtCore/QRect /usr/include/qt6/QtCore/QSize \
  /usr/include/qt6/QtCore/QSizeF /usr/include/qt6/QtGui/QTransform \
- /usr/include/qt6/QtGui/qscreen_platform.h
+ /usr/include/qt6/QtGui/qscreen_platform.h \
+ /usr/include/qt6/QtOpenGLWidgets/QOpenGLWidget \
+ /usr/include/qt6/QtOpenGLWidgets/qopenglwidget.h \
+ /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+ /usr/include/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtGui/QSurfaceFormat \
+ /usr/include/qt6/QtGui/qsurfaceformat.h /usr/include/qt6/QtGui/qopengl.h \
+ /usr/include/GL/gl.h /usr/include/qt6/QtGui/qopenglext.h \
+ /usr/include/inttypes.h

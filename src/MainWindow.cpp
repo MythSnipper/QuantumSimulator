@@ -1,6 +1,6 @@
 #include "MainWindow.hpp"
 
-#include "GLRenderer.hpp"
+#include "QT_GLRenderer.hpp"
 
 #include <iostream>
 
@@ -18,11 +18,9 @@
 #include <QSettings>
 #include <QCloseEvent>
 
-
 auto QDFEATURES = QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable | QDockWidget::DockWidgetClosable;
 
-
-//save layout on close
+//callback: save layout on close
 void MainWindow::closeEvent(QCloseEvent* event){
     saveLayout();
 
@@ -111,7 +109,7 @@ void MainWindow::createMenuBar(){
     );
 }
 
-//save and restore the layout of panes
+//save and restore the layout of panels
 void MainWindow::saveLayout(){
     QSettings settings(
         "QuantumUser",
@@ -164,7 +162,7 @@ QDockWidget* MainWindow::createRendererDock(){
     QWidget* dockContentWrapper = new QWidget(dock);
     dockContentWrapper->setProperty("role", "dockContentWrapper");
 
-    GLRenderer* renderer = new GLRenderer();
+    QOpenGLWidget* renderer = createRenderer();
 
     QVBoxLayout* dockContentWrapperLayout = new QVBoxLayout(dockContentWrapper);
     dockContentWrapperLayout->addWidget(renderer);
@@ -247,8 +245,9 @@ QDockWidget* MainWindow::createPropertiesDock(){
 }
 
 //Create widgets
-QWidget* MainWindow::createRenderer(){
-    QWidget* renderer = new QWidget();
+QOpenGLWidget* MainWindow::createRenderer(){
+
+    QT_GLRenderer* renderer = new QT_GLRenderer();
 
     return renderer;
 }
