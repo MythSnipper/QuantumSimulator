@@ -393,6 +393,7 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/GL/gl.h /usr/include/qt6/QtGui/qopenglext.h \
  /usr/include/inttypes.h \
  /home/mythsnipper/Dev/cpp/QuantumSimulator/include/QT_GLRenderer.hpp \
+ /home/mythsnipper/Dev/cpp/QuantumSimulator/include/GLRenderer.hpp \
  /usr/include/qt6/QtOpenGL/QOpenGLFunctions_3_3_Core \
  /usr/include/qt6/QtOpenGL/qopenglfunctions_3_3_core.h \
  /usr/include/qt6/QtOpenGL/qtopenglglobal.h \
