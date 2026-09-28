@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <iostream>
 
-
 const char* vertexShaderPath = "shaders/vert.glsl";
 const char* fragmentShaderPath = "shaders/frag.glsl";
 
@@ -144,21 +143,27 @@ void QT_GLRenderer::paintGL(){
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     for(RenderObject* object : objects){
-        glm::mat4 model = object->transform.get_matrix();
-        glm::mat4 view = camera.get_view_matrix();
-        glm::mat4 projection = camera.get_projection_matrix();
-
-        object->shader->activate();
-
-        object->shader->set_mat4("model", false, model);
-        object->shader->set_mat4("view", false, view);
-        object->shader->set_mat4("projection", false, projection);
-
-        object->vao->bind();
-        glDrawArrays(GL_TRIANGLES, 0, object->vertexCount);
-
+        drawRenderObject(object);
     }
 }
+
+void QT_GLRenderer::drawRenderObject(RenderObject* object){
+    glm::mat4 model = object->transform.get_matrix();
+    glm::mat4 view = camera.get_view_matrix();
+    glm::mat4 projection = camera.get_projection_matrix();
+
+    object->shader->activate();
+
+    object->shader->set_mat4("model", false, model);
+    object->shader->set_mat4("view", false, view);
+    object->shader->set_mat4("projection", false, projection);
+
+    object->vao->bind();
+    glDrawArrays(GL_TRIANGLES, 0, object->vertexCount);
+}
+
+
+
 
 void QT_GLRenderer::printInfo(){
     for(int i=0;i<20;i++)printf("-");puts("");

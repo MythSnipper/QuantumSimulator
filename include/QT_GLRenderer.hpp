@@ -24,6 +24,7 @@ protected:
     void paintGL() override;
 
 private:
+    void drawRenderObject(RenderObject* object);
     void printInfo();
     void applySettings();
 
