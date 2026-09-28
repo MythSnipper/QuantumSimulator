@@ -120,6 +120,42 @@ private:
     int color_channels_count;
 };
 
+struct Transform{
+    glm::vec3 position = glm::vec3(0.0f);
+    glm::vec3 rotation = glm::vec3(0.0f);
+    glm::vec3 scale    = glm::vec3(1.0f);
+
+    glm::mat4 get_matrix();
+};
+
+class Camera{
+public:
+    glm::vec3 position = glm::vec3(4.0f, 3.0f, 5.0f);
+    glm::vec3 target = glm::vec3(0.0f, 0.0f, 0.0f);
+    glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f);
+
+    float fov = 45.0f; //degrees
+    float aspect_ratio = 1.0f;
+
+    float near_plane = 0.1f;
+    float far_plane = 100.0f;
+
+    glm::mat4 get_view_matrix();
+    glm::mat4 get_projection_matrix();
+};
+class RenderObject{
+public:
+    Transform transform;
+
+    VAO* vao = nullptr;
+    ShaderProgram* shader = nullptr;
+
+    unsigned int vertexCount = 0;
+};
+
+
+
+
 
 
 

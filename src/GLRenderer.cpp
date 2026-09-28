@@ -364,6 +364,52 @@ void Texture2D::bind_texture_unit(GLenum texture_unit){
     glBindTexture(GL_TEXTURE_2D, id);
 }
 
+glm::mat4 Transform::get_matrix(){
+    glm::mat4 model = glm::mat4(1.0f);
+
+    model = glm::translate(
+        model,
+        position
+    );
+
+    model = glm::rotate(
+        model,
+        rotation.x,
+        glm::vec3(1.0f, 0.0f, 0.0f)
+    );
+
+    model = glm::rotate(
+        model,
+        rotation.y,
+        glm::vec3(0.0f, 1.0f, 0.0f)
+    );
+
+    model = glm::rotate(
+        model,
+        rotation.z,
+        glm::vec3(0.0f, 0.0f, 1.0f)
+    );
+
+    model = glm::scale(
+        model,
+        scale
+    );
+
+    return model;
+}
+
+
+glm::mat4 Camera::get_view_matrix(){
+    return glm::lookAt(position, target, up);
+}
+glm::mat4 Camera::get_projection_matrix(){
+    return glm::perspective(glm::radians(fov), aspect_ratio, near_plane, far_plane);
+}
+
+
+
+
+
 
 //others
 char* read_file(const char* filename){

@@ -1,21 +1,28 @@
 #include "QT_GLRenderer.hpp"
 
+#include <stdio.h>
+#include <iostream>
+
 
 const char* vertexShaderPath = "shaders/vert.glsl";
 const char* fragmentShaderPath = "shaders/frag.glsl";
 
 QT_GLRenderer::QT_GLRenderer(QWidget* parent) : QOpenGLWidget(parent){
     //settings
-    wireframe_mode = true;
+    wireframe_mode = false;
     depth_test = true;
 }
 
 QT_GLRenderer::~QT_GLRenderer(){
     makeCurrent();
 
+    for(RenderObject* object : objects){
+        delete object;
+    }
+
     delete shaderProgram;
-    delete vbo;
     delete vao;
+    delete vbo;
 
     doneCurrent();
 }
@@ -97,43 +104,60 @@ void QT_GLRenderer::initializeGL(){
 
     vao->unbind();
 
-    vertexCount = 36;
+    int vertexCount = 36;
 
+    //add objects to render list
+    RenderObject* cube1 = new RenderObject();
+    RenderObject* cube2 = new RenderObject();
+
+    cube1->transform.position =
+        glm::vec3(-2.0f, 0.0f, 0.0f);
+
+    cube2->transform.position =
+        glm::vec3(2.0f, 0.0f, 0.0f);
+
+    // Both cubes use the same geometry
+    cube1->vao = vao;
+    cube2->vao = vao;
+
+    // Both cubes use the same shader
+    cube1->shader = shaderProgram;
+    cube2->shader = shaderProgram;
+
+    cube1->vertexCount = vertexCount;
+    cube2->vertexCount = vertexCount;
+
+    objects.push_back(cube1);
+    objects.push_back(cube2);
+ 
+    update();
 }
-
 
 void QT_GLRenderer::resizeGL(int width, int height){
     glViewport(0, 0, width, height);
+
+    camera.aspect_ratio = ((float)width) / ((float)height);
 }
 
 void QT_GLRenderer::paintGL(){
+
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    glm::mat4 model = glm::mat4(1.0f);
+    for(RenderObject* object : objects){
+        glm::mat4 model = object->transform.get_matrix();
+        glm::mat4 view = camera.get_view_matrix();
+        glm::mat4 projection = camera.get_projection_matrix();
 
-    glm::mat4 view = glm::lookAt(
-        glm::vec3(4.0f, 3.0f, 5.0f),  // camera position
-        glm::vec3(0.0f, 0.0f, 0.0f),  // looking at
-        glm::vec3(0.0f, 1.0f, 0.0f)   // up
-    );
+        object->shader->activate();
 
-    glm::mat4 projection = glm::perspective(
-        glm::radians(45.0f),
-        float(width()) / float(height()),
-        0.1f,
-        100.0f
-    );
+        object->shader->set_mat4("model", false, model);
+        object->shader->set_mat4("view", false, view);
+        object->shader->set_mat4("projection", false, projection);
 
-    shaderProgram->activate();
+        object->vao->bind();
+        glDrawArrays(GL_TRIANGLES, 0, object->vertexCount);
 
-    shaderProgram->set_mat4("model", false, model);
-    shaderProgram->set_mat4("view", false, view);
-    shaderProgram->set_mat4("projection", false, projection);
-
-    vao->bind();
-    glDrawArrays(GL_TRIANGLES, 0, vertexCount);
-
-    vao->unbind();
+    }
 }
 
 void QT_GLRenderer::printInfo(){

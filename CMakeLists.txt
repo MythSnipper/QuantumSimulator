@@ -19,8 +19,8 @@ qt_standard_project_setup()
 qt_add_executable(QuantumEngine
     src/main.cpp
     src/MainWindow.cpp
-    src/QT_GLRenderer.cpp
     src/GLRenderer.cpp
+    src/QT_GLRenderer.cpp
 )
 
 target_include_directories(QuantumEngine

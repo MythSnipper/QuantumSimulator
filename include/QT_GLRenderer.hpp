@@ -27,18 +27,17 @@ private:
     void printInfo();
     void applySettings();
 
-    // settings
+    //settings
     bool wireframe_mode = false;
     bool depth_test = true;
 
-    // renderer objects
-    ShaderProgram* shaderProgram = nullptr;
+    //renderer objects
+    ShaderProgram* shaderProgram;
+    VAO* vao;
+    VBO* vbo;
 
-    VBO* vbo = nullptr;
-    VAO* vao = nullptr;
+    Camera camera;
 
-    unsigned int vertexCount = 0;
-
+    std::vector<RenderObject*> objects;
 };
-
 
