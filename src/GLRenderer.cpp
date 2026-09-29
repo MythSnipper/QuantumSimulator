@@ -398,14 +398,89 @@ glm::mat4 Transform::get_matrix(){
     return model;
 }
 
-
 glm::mat4 Camera::get_view_matrix(){
-    return glm::lookAt(position, target, up);
+    return glm::lookAt(position, target, worldUp);
 }
 glm::mat4 Camera::get_projection_matrix(){
     return glm::perspective(glm::radians(fov), aspect_ratio, near_plane, far_plane);
 }
+glm::vec3 Camera::getForward(){
+    return glm::normalize(target - position);
+}
+glm::vec3 Camera::getRight(){
+    return glm::normalize(
+        glm::cross(getForward(), worldUp)
+    );
+}
+glm::vec3 Camera::getUp(){
+    return glm::normalize(
+        glm::cross(getRight(), getForward())
+    );
+}
+void Camera::moveForward(float amount){
+    position += getForward() * amount;
+    target += getForward() * amount;
+}
+void Camera::moveRight(float amount){
+    glm::vec3 right = getRight();
 
+    position += right * amount;
+    target += right * amount;
+}
+void Camera::moveUp(float amount){
+    position += worldUp * amount;
+    target += worldUp * amount;
+}
+
+Mesh::Mesh(float vertices[], int vertices_size){
+    initializeOpenGLFunctions();
+    vao.bind();
+
+    vbo.fill(vertices, vertices_size, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
+
+    glEnableVertexAttribArray(0);
+
+    vao.unbind();
+
+    vertexCount = vertices_size / (3 * sizeof(float));
+}
+Mesh::Mesh(float vertices[], int vertices_size, uint32_t indices[], int indices_size){
+    initializeOpenGLFunctions();
+    ebo = std::make_unique<EBO>();
+
+    vao.bind();
+
+    vbo.fill(vertices, vertices_size, GL_STATIC_DRAW);
+    ebo->fill(indices, indices_size, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
+
+    glEnableVertexAttribArray(0);
+
+    vao.unbind();
+
+    indexCount = indices_size / sizeof(uint32_t);
+}
+void Mesh::bind(){
+    vao.bind();
+}
+void Mesh::unbind(){
+    vao.unbind();
+}
+void Mesh::draw(){
+    vao.bind();
+
+    if(ebo){
+        glDrawElements(GL_TRIANGLES, indexCount, GL_UNSIGNED_INT, nullptr);
+    }
+    else{
+        glDrawArrays(GL_TRIANGLES, 0, vertexCount);
+    }
+
+    vao.unbind();
+}
 
 
 

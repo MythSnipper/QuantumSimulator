@@ -1675,6 +1675,7 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: /home/mythsnipper/Dev/cpp/Qua
   /usr/include/qt6/QtCore/QSettings \
   /usr/include/qt6/QtCore/QSize \
   /usr/include/qt6/QtCore/QSizeF \
+  /usr/include/qt6/QtCore/QTimer \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -1798,6 +1799,7 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: /home/mythsnipper/Dev/cpp/Qua
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
   /usr/include/qt6/QtCore/qtformat_impl.h \
+  /usr/include/qt6/QtCore/qtimer.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -2448,6 +2450,7 @@ CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QTimer \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -2457,6 +2460,7 @@ CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/
   /usr/include/qt6/QtCore/q20utility.h \
   /usr/include/qt6/QtCore/q23type_traits.h \
   /usr/include/qt6/QtCore/q23utility.h \
+  /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/qt6/QtCore/qalgorithms.h \
   /usr/include/qt6/QtCore/qalloc.h \
   /usr/include/qt6/QtCore/qanystringview.h \
@@ -2467,6 +2471,7 @@ CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/
   /usr/include/qt6/QtCore/qatomic.h \
   /usr/include/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/qt6/QtCore/qbasicatomic.h \
+  /usr/include/qt6/QtCore/qbasictimer.h \
   /usr/include/qt6/QtCore/qbindingstorage.h \
   /usr/include/qt6/QtCore/qbytearray.h \
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -2486,8 +2491,10 @@ CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/
   /usr/include/qt6/QtCore/qcontiguouscache.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
+  /usr/include/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/qt6/QtCore/qdebug.h \
   /usr/include/qt6/QtCore/qendian.h \
+  /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
@@ -2561,6 +2568,7 @@ CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o: /home/mythsnipper/Dev/cpp/
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtextstream.h \
   /usr/include/qt6/QtCore/qtformat_impl.h \
+  /usr/include/qt6/QtCore/qtimer.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
@@ -3495,6 +3503,8 @@ CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o:
 /usr/include/qt6/QtCore/qcoreapplication.h:
 
 /usr/include/qt6/QtCore/qbasictimer.h:
+
+/usr/include/qt6/QtCore/QTimer:
 
 /usr/include/qt6/QtCore/QSizeF:
 
@@ -4703,6 +4713,8 @@ CMakeFiles/4.4.3/CMakeSystem.cmake:
 /usr/include/qt6/QtGui/qfontinfo.h:
 
 /usr/include/c++/16/istream:
+
+/usr/include/qt6/QtCore/qtimer.h:
 
 /usr/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
 

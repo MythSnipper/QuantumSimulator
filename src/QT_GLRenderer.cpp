@@ -8,129 +8,110 @@ const char* fragmentShaderPath = "shaders/frag.glsl";
 
 QT_GLRenderer::QT_GLRenderer(QWidget* parent) : QOpenGLWidget(parent){
     //settings
-    wireframe_mode = false;
+    wireframe_mode = true;
     depth_test = true;
+
+    //renderTimer configuration
+    renderTimer.setInterval(1000 / 60); //around 60 fps
+    connect(&renderTimer, &QTimer::timeout, this, QOverload<>::of(&QT_GLRenderer::update));
+
+    renderTimer.start();
 }
 
 QT_GLRenderer::~QT_GLRenderer(){
     makeCurrent();
 
-    for(RenderObject* object : objects){
-        delete object;
-    }
-
-    delete shaderProgram;
-    delete vao;
-    delete vbo;
-
     doneCurrent();
 }
 
+
 void QT_GLRenderer::initializeGL(){
     initializeOpenGLFunctions();
-    
+
     printInfo();
     applySettings();
 
-    shaderProgram = new ShaderProgram();
+    //make shader
+    shaderProgram = std::make_unique<ShaderProgram>();
     shaderProgram->from_files(vertexShaderPath, fragmentShaderPath);
 
     float vertices[] = {
+
         // back face
         -1.0f, -1.0f, -1.0f,
          1.0f, -1.0f, -1.0f,
          1.0f,  1.0f, -1.0f,
-    
+
          1.0f,  1.0f, -1.0f,
         -1.0f,  1.0f, -1.0f,
         -1.0f, -1.0f, -1.0f,
-    
+
         // front face
         -1.0f, -1.0f,  1.0f,
          1.0f, -1.0f,  1.0f,
          1.0f,  1.0f,  1.0f,
-    
+
          1.0f,  1.0f,  1.0f,
         -1.0f,  1.0f,  1.0f,
         -1.0f, -1.0f,  1.0f,
-    
+
         // left face
         -1.0f,  1.0f,  1.0f,
         -1.0f,  1.0f, -1.0f,
         -1.0f, -1.0f, -1.0f,
-    
+
         -1.0f, -1.0f, -1.0f,
         -1.0f, -1.0f,  1.0f,
         -1.0f,  1.0f,  1.0f,
-    
+
         // right face
          1.0f,  1.0f,  1.0f,
          1.0f, -1.0f, -1.0f,
          1.0f,  1.0f, -1.0f,
-    
+
          1.0f, -1.0f, -1.0f,
          1.0f,  1.0f,  1.0f,
          1.0f, -1.0f,  1.0f,
-    
+
         // bottom face
         -1.0f, -1.0f, -1.0f,
          1.0f, -1.0f, -1.0f,
          1.0f, -1.0f,  1.0f,
-    
+
          1.0f, -1.0f,  1.0f,
         -1.0f, -1.0f,  1.0f,
         -1.0f, -1.0f, -1.0f,
-    
+
         // top face
         -1.0f,  1.0f, -1.0f,
          1.0f,  1.0f, -1.0f,
          1.0f,  1.0f,  1.0f,
-    
+
          1.0f,  1.0f,  1.0f,
         -1.0f,  1.0f,  1.0f,
         -1.0f,  1.0f, -1.0f
     };
+
+    //make mesh
+    mesh = std::make_unique<Mesh>(vertices, sizeof(vertices));
     
-    vao = new VAO();
-    vbo = new VBO();
-    
-    vao->bind();
-    
-    vbo->fill(vertices, sizeof(vertices), GL_STATIC_DRAW);
-    
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
+    //make render object
+    auto cube1 = std::make_unique<RenderObject>();
+    cube1->transform.position = glm::vec3(-2.0f, 0.0f, 0.0f);
+    cube1->mesh = mesh.get();
+    cube1->shader = shaderProgram.get();
+    objects.push_back(std::move(cube1));
 
-    vao->unbind();
+    //make another render object
+    auto cube2 = std::make_unique<RenderObject>();
+    cube2->transform.position = glm::vec3(2.0f, 0.0f, 0.0f);
+    cube2->mesh = mesh.get();
+    cube2->shader = shaderProgram.get();
+    objects.push_back(std::move(cube2));
 
-    int vertexCount = 36;
-
-    //add objects to render list
-    RenderObject* cube1 = new RenderObject();
-    RenderObject* cube2 = new RenderObject();
-
-    cube1->transform.position =
-        glm::vec3(-2.0f, 0.0f, 0.0f);
-
-    cube2->transform.position =
-        glm::vec3(2.0f, 0.0f, 0.0f);
-
-    // Both cubes use the same geometry
-    cube1->vao = vao;
-    cube2->vao = vao;
-
-    // Both cubes use the same shader
-    cube1->shader = shaderProgram;
-    cube2->shader = shaderProgram;
-
-    cube1->vertexCount = vertexCount;
-    cube2->vertexCount = vertexCount;
-
-    objects.push_back(cube1);
-    objects.push_back(cube2);
- 
     update();
 }
+
 
 void QT_GLRenderer::resizeGL(int width, int height){
     glViewport(0, 0, width, height);
@@ -139,15 +120,16 @@ void QT_GLRenderer::resizeGL(int width, int height){
 }
 
 void QT_GLRenderer::paintGL(){
-
+    //clear screen
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    for(RenderObject* object : objects){
+    //draw render objects
+    for(auto& object : objects){
         drawRenderObject(object);
     }
 }
 
-void QT_GLRenderer::drawRenderObject(RenderObject* object){
+void QT_GLRenderer::drawRenderObject(std::unique_ptr<RenderObject>& object){
     glm::mat4 model = object->transform.get_matrix();
     glm::mat4 view = camera.get_view_matrix();
     glm::mat4 projection = camera.get_projection_matrix();
@@ -158,12 +140,8 @@ void QT_GLRenderer::drawRenderObject(RenderObject* object){
     object->shader->set_mat4("view", false, view);
     object->shader->set_mat4("projection", false, projection);
 
-    object->vao->bind();
-    glDrawArrays(GL_TRIANGLES, 0, object->vertexCount);
+    object->mesh->draw();
 }
-
-
-
 
 void QT_GLRenderer::printInfo(){
     for(int i=0;i<20;i++)printf("-");puts("");

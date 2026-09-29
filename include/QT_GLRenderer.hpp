@@ -4,6 +4,10 @@
 
 #include <QOpenGLWidget>
 #include <QOpenGLFunctions_3_3_Core>
+#include <QTimer>
+
+#include <memory>
+#include <vector>
 
 //forward declare
 class VertexShader;
@@ -24,7 +28,7 @@ protected:
     void paintGL() override;
 
 private:
-    void drawRenderObject(RenderObject* object);
+    void drawRenderObject(std::unique_ptr<RenderObject>& object);
     void printInfo();
     void applySettings();
 
@@ -33,12 +37,12 @@ private:
     bool depth_test = true;
 
     //renderer objects
-    ShaderProgram* shaderProgram;
-    VAO* vao;
-    VBO* vbo;
+    std::unique_ptr<Mesh> mesh;
+    std::unique_ptr<ShaderProgram> shaderProgram;
 
     Camera camera;
+    std::vector<std::unique_ptr<RenderObject>> objects;
 
-    std::vector<RenderObject*> objects;
+    QTimer renderTimer;
 };
 

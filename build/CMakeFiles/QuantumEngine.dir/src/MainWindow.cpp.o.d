@@ -565,7 +565,8 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/glm/ext/vector_int1_sized.hpp \
  /usr/include/glm/ext/vector_uint1.hpp \
  /usr/include/glm/ext/vector_uint1_sized.hpp \
- /usr/include/glm/gtc/type_ptr.inl /usr/include/c++/16/iostream \
+ /usr/include/glm/gtc/type_ptr.inl /usr/include/qt6/QtCore/QTimer \
+ /usr/include/qt6/QtCore/qtimer.h /usr/include/c++/16/iostream \
  /usr/include/qt6/QtWidgets/QDockWidget \
  /usr/include/qt6/QtWidgets/qdockwidget.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/QStatusBar \

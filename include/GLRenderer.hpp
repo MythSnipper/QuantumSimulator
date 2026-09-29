@@ -21,6 +21,9 @@ struct ColorRGBA{
 };
 typedef int UniformID;
 
+//forward declare
+class Mesh;
+
 
 
 class VertexShader : protected QOpenGLFunctions_3_3_Core{
@@ -130,31 +133,64 @@ struct Transform{
 
 class Camera{
 public:
+    //position and orientation
     glm::vec3 position = glm::vec3(4.0f, 3.0f, 5.0f);
-    glm::vec3 target = glm::vec3(0.0f, 0.0f, 0.0f);
-    glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f);
+    glm::vec3 target = glm::vec3(0.0f);
 
-    float fov = 45.0f; //degrees
+    //world up
+    glm::vec3 worldUp = glm::vec3(0.0f, 1.0f, 0.0f);
+
+    //movement
+    float movementSpeed = 5.0f;
+    float mouseSensitivity = 0.1f;
+
+    //projection
+    float fov = 90.0f; //degrees
     float aspect_ratio = 1.0f;
-
     float near_plane = 0.1f;
     float far_plane = 100.0f;
 
+    //get matrices for rendering
     glm::mat4 get_view_matrix();
     glm::mat4 get_projection_matrix();
+
+    //move camera
+    void moveForward(float amount);
+    void moveRight(float amount);
+    void moveUp(float amount);
+
+    //rotate camera
+    void rotate(float yaw, float pitch);
+private: 
+    glm::vec3 getForward();
+    glm::vec3 getRight();
+    glm::vec3 getUp();
+
 };
 class RenderObject{
 public:
     Transform transform;
 
-    VAO* vao = nullptr;
+    Mesh* mesh = nullptr;
     ShaderProgram* shader = nullptr;
+};
+class Mesh : protected QOpenGLFunctions_3_3_Core{
+public:
+    Mesh(float vertices[], int vertices_size);
+    Mesh(float vertices[], int vertices_size, uint32_t indices[], int indices_size);
+
+    void bind();
+    void unbind();
+    void draw();
+
+private:
+    VAO vao;
+    VBO vbo;
+    std::unique_ptr<EBO> ebo; //optional
 
     unsigned int vertexCount = 0;
+    unsigned int indexCount = 0;
 };
-
-
-
 
 
 
