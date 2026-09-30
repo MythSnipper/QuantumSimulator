@@ -143,6 +143,9 @@ public:
     //movement
     float movementSpeed = 5.0f;
     float mouseSensitivity = 0.1f;
+    float panSensitivity = 0.01f;
+    float yaw = -90.0f;
+    float pitch = 0.0f;
 
     //projection
     float fov = 90.0f; //degrees
@@ -154,13 +157,17 @@ public:
     glm::mat4 get_view_matrix();
     glm::mat4 get_projection_matrix();
 
+
     //move camera
     void moveForward(float amount);
     void moveRight(float amount);
     void moveUp(float amount);
 
-    //rotate camera
+    //other operations
     void rotate(float yaw, float pitch);
+    void pan(float dx, float dy);
+    void zoom(float amount);
+
 private: 
     glm::vec3 getForward();
     glm::vec3 getRight();

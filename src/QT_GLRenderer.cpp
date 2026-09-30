@@ -10,12 +10,20 @@ QT_GLRenderer::QT_GLRenderer(QWidget* parent) : QOpenGLWidget(parent){
     //settings
     wireframe_mode = true;
     depth_test = true;
-    const int FPS = 1;
+    FPS = 60;
+
+    setFocusPolicy(Qt::StrongFocus);
+
+    connect(&renderTimer, &QTimer::timeout, this, [this](){
+            float deltaTime = frameTimer.restart() / 1000.0f;
+            updateCamera(deltaTime);
+            update();
+        }
+    );
 
     //renderTimer configuration
     renderTimer.setInterval(1000 / FPS); //how much ms to delay to achieve the target fps
-    connect(&renderTimer, &QTimer::timeout, this, QOverload<>::of(&QT_GLRenderer::update));
-
+    frameTimer.start();
     renderTimer.start();
 }
 
@@ -33,6 +41,159 @@ void QT_GLRenderer::initializeGL(){
     printInfo();
     applySettings();
 
+    createGLResources();
+
+    update();
+}
+
+void QT_GLRenderer::resizeGL(int width, int height){
+    glViewport(0, 0, width, height);
+
+    camera.aspect_ratio = ((float)width) / ((float)height);
+}
+
+void QT_GLRenderer::paintGL(){
+    //clear screen
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    //draw render objects
+    for(auto& object : objects){
+        glm::vec3 t = object.get()->transform.position;
+        drawRenderObject(object);
+    }
+}
+
+void QT_GLRenderer::keyPressEvent(QKeyEvent* event){
+    switch (event->key()){
+        case Qt::Key_W:
+            moveForward = true;
+            break;
+
+        case Qt::Key_S:
+            moveBackward = true;
+            break;
+
+        case Qt::Key_A:
+            moveLeft = true;
+            break;
+
+        case Qt::Key_D:
+            moveRight = true;
+            break;
+
+        case Qt::Key_Space:
+            moveUp = true;
+            break;
+
+        case Qt::Key_Control:
+            moveDown = true;
+            break;
+    }
+}
+
+void QT_GLRenderer::keyReleaseEvent(QKeyEvent* event){
+    switch (event->key()){
+        case Qt::Key_W:
+            moveForward = false;
+            break;
+
+        case Qt::Key_S:
+            moveBackward = false;
+            break;
+
+        case Qt::Key_A:
+            moveLeft = false;
+            break;
+
+        case Qt::Key_D:
+            moveRight = false;
+            break;
+
+        case Qt::Key_Space:
+            moveUp = false;
+            break;
+
+        case Qt::Key_Control:
+            moveDown = false;
+            break;
+    }
+}
+
+void QT_GLRenderer::mousePressEvent(QMouseEvent* event){
+    setFocus();
+
+    lastMousePosition = event->position().toPoint();
+
+    if(event->button() == Qt::RightButton){
+        rotating = true;
+    }
+    if(event->button() == Qt::MiddleButton){
+        panning = true;
+    }
+}
+
+void QT_GLRenderer::mouseReleaseEvent(QMouseEvent* event){
+    if(event->button() == Qt::RightButton){
+        rotating = false;
+    }
+
+    if(event->button() == Qt::MiddleButton){
+        panning = false;
+    }
+}
+
+void QT_GLRenderer::mouseMoveEvent(QMouseEvent* event){
+    QPoint current = event->position().toPoint();
+
+    QPoint delta = current - lastMousePosition;
+
+    lastMousePosition = current;
+
+    if(rotating){
+        camera.rotate(
+            delta.x(),
+            delta.y()
+        );
+        update();
+    }
+    if(panning){
+        camera.pan(
+            delta.x(),
+            delta.y()
+        );
+        update();
+    }
+}
+
+void QT_GLRenderer::wheelEvent(QWheelEvent* event){
+    camera.zoom(
+        event->angleDelta().y() / 120.0f
+    );
+}
+
+
+void QT_GLRenderer::updateCamera(float deltaTime){
+    if(moveForward){
+        camera.moveForward(camera.movementSpeed * deltaTime);
+    }
+    if(moveBackward){
+        camera.moveForward(-camera.movementSpeed * deltaTime);
+    }
+    if(moveRight){
+        camera.moveRight(camera.movementSpeed * deltaTime);
+    }
+    if(moveLeft){
+        camera.moveRight(-camera.movementSpeed * deltaTime);
+    }
+    if(moveUp){
+        camera.moveUp(camera.movementSpeed * deltaTime);
+    }
+    if(moveDown){
+        camera.moveUp(-camera.movementSpeed * deltaTime);
+    }
+}
+
+void QT_GLRenderer::createGLResources(){
     //make shader
     shaderProgram = std::make_unique<ShaderProgram>();
     shaderProgram->from_files(vertexShaderPath, fragmentShaderPath);
@@ -111,27 +272,6 @@ void QT_GLRenderer::initializeGL(){
     cube2->mesh = mesh.get();
     cube2->shader = shaderProgram.get();
     objects.push_back(std::move(cube2));
-
-    update();
-}
-
-void QT_GLRenderer::resizeGL(int width, int height){
-    glViewport(0, 0, width, height);
-
-    camera.aspect_ratio = ((float)width) / ((float)height);
-}
-
-void QT_GLRenderer::paintGL(){
-    //clear screen
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-    //draw render objects
-    printf("start paintgl\n");
-    for(auto& object : objects){
-        glm::vec3 t = object.get()->transform.position;
-        printf("Drawing object at (%f, %f, %f)\n", t.x, t.y, t.z);
-        drawRenderObject(object);
-    }
 }
 
 void QT_GLRenderer::destroyGLResources(){
@@ -187,3 +327,11 @@ void QT_GLRenderer::applySettings(){
         glDisable(GL_DEPTH_TEST);
     }
 }
+
+
+
+
+
+
+
+

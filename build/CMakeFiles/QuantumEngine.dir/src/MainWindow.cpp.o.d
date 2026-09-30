@@ -566,7 +566,10 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/glm/ext/vector_uint1.hpp \
  /usr/include/glm/ext/vector_uint1_sized.hpp \
  /usr/include/glm/gtc/type_ptr.inl /usr/include/qt6/QtCore/QTimer \
- /usr/include/qt6/QtCore/qtimer.h /usr/include/c++/16/iostream \
+ /usr/include/qt6/QtCore/qtimer.h /usr/include/qt6/QtCore/QElapsedTimer \
+ /usr/include/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/qt6/QtGui/QMouseEvent /usr/include/qt6/QtGui/QWheelEvent \
+ /usr/include/qt6/QtGui/QKeyEvent /usr/include/c++/16/iostream \
  /usr/include/qt6/QtWidgets/QDockWidget \
  /usr/include/qt6/QtWidgets/qdockwidget.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/QStatusBar \

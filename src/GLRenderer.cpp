@@ -283,16 +283,8 @@ VAO::~VAO(){
         id = 0;
     }
 }
-void VAO::bind() //TEMPORARY EDIT
-{
-    printf("Binding VAO %u\n", id);
-
+void VAO::bind(){
     glBindVertexArray(id);
-
-    GLint currentVAO = 0;
-    glGetIntegerv(GL_VERTEX_ARRAY_BINDING, &currentVAO);
-
-    printf("After glBindVertexArray: %d\n", currentVAO);
 }
 void VAO::unbind(){
     glBindVertexArray(0);
@@ -439,6 +431,37 @@ void Camera::moveUp(float amount){
     position += worldUp * amount;
     target += worldUp * amount;
 }
+void Camera::rotate(float yaw, float pitch){
+    this->yaw += yaw * mouseSensitivity;
+    this->pitch -= pitch * mouseSensitivity;
+
+    this->pitch = glm::clamp(
+        this->pitch,
+        -89.0f,
+        89.0f
+    );
+}
+void Camera::pan(float dx, float dy){
+    glm::vec3 forward = getForward();
+
+    glm::vec3 right =
+        glm::normalize(
+            glm::cross(forward, worldUp)
+        );
+
+    glm::vec3 up =
+        glm::normalize(
+            glm::cross(right, forward)
+        );
+
+    position += (-right * dx + up * dy) * panSensitivity;
+}
+void Camera::zoom(float amount){
+    fov -= amount;
+
+    fov = glm::clamp(fov, 10.0f, 90.0f);
+
+}
 
 Mesh::Mesh(float vertices[], int vertices_size){
     initializeOpenGLFunctions();
@@ -477,25 +500,15 @@ void Mesh::bind(){
 void Mesh::unbind(){
     vao.unbind();
 }
-void Mesh::draw() //TEMPORARY EDIT
-{
+void Mesh::draw(){
     vao.bind();
 
-    GLint currentVAO = 0;
-    glGetIntegerv(GL_VERTEX_ARRAY_BINDING, &currentVAO);
-
-    printf(
-        "Mesh draw: VAO id=%u, bound VAO=%d, vertices=%u\n",
-        vao.id,
-        currentVAO,
-        vertexCount
-    );
-
+    if(ebo){
+    glDrawElements(GL_TRIANGLES, indexCount, GL_UNSIGNED_INT, nullptr);
+    }
+    else{
     glDrawArrays(GL_TRIANGLES, 0, vertexCount);
-
-    GLenum error = glGetError();
-
-    printf("glDrawArrays error: %u\n", error);
+    }
 
     vao.unbind();
 }
@@ -519,24 +532,3 @@ char* read_file(const char* filename){
 
     return buf;
 }
-
-
-
-/*
-void VAO::bind(){
-    glBindVertexArray(id);
-}
-    
-void Mesh::draw(){
-    vao.bind();
-
-    if(ebo){
-    glDrawElements(GL_TRIANGLES, indexCount, GL_UNSIGNED_INT, nullptr);
-    }
-    else{
-    glDrawArrays(GL_TRIANGLES, 0, vertexCount);
-    }
-
-    vao.unbind();
-}
-*/
