@@ -10,9 +10,10 @@ QT_GLRenderer::QT_GLRenderer(QWidget* parent) : QOpenGLWidget(parent){
     //settings
     wireframe_mode = true;
     depth_test = true;
+    const int FPS = 1;
 
     //renderTimer configuration
-    renderTimer.setInterval(1000 / 60); //around 60 fps
+    renderTimer.setInterval(1000 / FPS); //how much ms to delay to achieve the target fps
     connect(&renderTimer, &QTimer::timeout, this, QOverload<>::of(&QT_GLRenderer::update));
 
     renderTimer.start();
@@ -24,9 +25,10 @@ QT_GLRenderer::~QT_GLRenderer(){
     doneCurrent();
 }
 
-
 void QT_GLRenderer::initializeGL(){
     initializeOpenGLFunctions();
+
+    connect(context(), &QOpenGLContext::aboutToBeDestroyed, this, &QT_GLRenderer::destroyGLResources, Qt::DirectConnection);
 
     printInfo();
     applySettings();
@@ -36,7 +38,6 @@ void QT_GLRenderer::initializeGL(){
     shaderProgram->from_files(vertexShaderPath, fragmentShaderPath);
 
     float vertices[] = {
-
         // back face
         -1.0f, -1.0f, -1.0f,
          1.0f, -1.0f, -1.0f,
@@ -95,6 +96,8 @@ void QT_GLRenderer::initializeGL(){
     //make mesh
     mesh = std::make_unique<Mesh>(vertices, sizeof(vertices));
     
+    objects.clear();
+
     //make render object
     auto cube1 = std::make_unique<RenderObject>();
     cube1->transform.position = glm::vec3(-2.0f, 0.0f, 0.0f);
@@ -112,7 +115,6 @@ void QT_GLRenderer::initializeGL(){
     update();
 }
 
-
 void QT_GLRenderer::resizeGL(int width, int height){
     glViewport(0, 0, width, height);
 
@@ -124,9 +126,19 @@ void QT_GLRenderer::paintGL(){
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     //draw render objects
+    printf("start paintgl\n");
     for(auto& object : objects){
+        glm::vec3 t = object.get()->transform.position;
+        printf("Drawing object at (%f, %f, %f)\n", t.x, t.y, t.z);
         drawRenderObject(object);
     }
+}
+
+void QT_GLRenderer::destroyGLResources(){
+    objects.clear();
+
+    mesh.reset();
+    shaderProgram.reset();
 }
 
 void QT_GLRenderer::drawRenderObject(std::unique_ptr<RenderObject>& object){
@@ -144,7 +156,10 @@ void QT_GLRenderer::drawRenderObject(std::unique_ptr<RenderObject>& object){
 }
 
 void QT_GLRenderer::printInfo(){
-    for(int i=0;i<20;i++)printf("-");puts("");
+    for(int i=0;i<20;i++){
+        printf("-");
+    }
+    puts("");
     puts("Info:");
     printf("\tOS: ");
     #ifdef _WIN32
@@ -158,7 +173,9 @@ void QT_GLRenderer::printInfo(){
     int nrAttributes;
     glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
     printf("\tNumber of vertex attributes available: %d\n", nrAttributes);
-    for(int i=0;i<20;i++)printf("-");
+    for(int i=0;i<20;i++){
+        printf("-");
+    }
 }
 
 void QT_GLRenderer::applySettings(){

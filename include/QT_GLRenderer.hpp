@@ -28,6 +28,7 @@ protected:
     void paintGL() override;
 
 private:
+    void destroyGLResources();
     void drawRenderObject(std::unique_ptr<RenderObject>& object);
     void printInfo();
     void applySettings();

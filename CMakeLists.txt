@@ -35,6 +35,7 @@ target_link_libraries(QuantumEngine
         Qt6::OpenGLWidgets
 )
 
+#[===[
 target_compile_options(QuantumEngine PRIVATE
     -g
     -O0
@@ -47,3 +48,6 @@ target_compile_options(QuantumEngine PRIVATE
 target_link_options(QuantumEngine PRIVATE
     -fsanitize=address,undefined
 )
+
+]===]
+

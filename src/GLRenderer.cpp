@@ -283,8 +283,16 @@ VAO::~VAO(){
         id = 0;
     }
 }
-void VAO::bind(){
+void VAO::bind() //TEMPORARY EDIT
+{
+    printf("Binding VAO %u\n", id);
+
     glBindVertexArray(id);
+
+    GLint currentVAO = 0;
+    glGetIntegerv(GL_VERTEX_ARRAY_BINDING, &currentVAO);
+
+    printf("After glBindVertexArray: %d\n", currentVAO);
 }
 void VAO::unbind(){
     glBindVertexArray(0);
@@ -469,15 +477,25 @@ void Mesh::bind(){
 void Mesh::unbind(){
     vao.unbind();
 }
-void Mesh::draw(){
+void Mesh::draw() //TEMPORARY EDIT
+{
     vao.bind();
 
-    if(ebo){
-        glDrawElements(GL_TRIANGLES, indexCount, GL_UNSIGNED_INT, nullptr);
-    }
-    else{
-        glDrawArrays(GL_TRIANGLES, 0, vertexCount);
-    }
+    GLint currentVAO = 0;
+    glGetIntegerv(GL_VERTEX_ARRAY_BINDING, &currentVAO);
+
+    printf(
+        "Mesh draw: VAO id=%u, bound VAO=%d, vertices=%u\n",
+        vao.id,
+        currentVAO,
+        vertexCount
+    );
+
+    glDrawArrays(GL_TRIANGLES, 0, vertexCount);
+
+    GLenum error = glGetError();
+
+    printf("glDrawArrays error: %u\n", error);
 
     vao.unbind();
 }
@@ -504,3 +522,21 @@ char* read_file(const char* filename){
 
 
 
+/*
+void VAO::bind(){
+    glBindVertexArray(id);
+}
+    
+void Mesh::draw(){
+    vao.bind();
+
+    if(ebo){
+    glDrawElements(GL_TRIANGLES, indexCount, GL_UNSIGNED_INT, nullptr);
+    }
+    else{
+    glDrawArrays(GL_TRIANGLES, 0, vertexCount);
+    }
+
+    vao.unbind();
+}
+*/

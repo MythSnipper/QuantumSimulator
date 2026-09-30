@@ -2,8 +2,6 @@ QuantumEngine: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libasan.so \
   CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o \
   CMakeFiles/QuantumEngine.dir/src/main.cpp.o \
   CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o \
@@ -22,7 +20,6 @@ QuantumEngine: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libubsan.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so \
@@ -101,10 +98,6 @@ QuantumEngine: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libasan_preinit.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libasan.so:
-
 CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o:
 
 CMakeFiles/QuantumEngine.dir/src/main.cpp.o:
@@ -140,8 +133,6 @@ CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o:
 /usr/lib/libm.so.6:
 
 /usr/lib/libmvec.so.1:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libubsan.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
 
