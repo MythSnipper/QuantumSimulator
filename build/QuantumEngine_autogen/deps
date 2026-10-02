@@ -2,6 +2,7 @@ QuantumEngine_autogen/timestamp: \
 	/home/mythsnipper/Dev/cpp/QuantumSimulator/CMakeLists.txt \
 	/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/4.4.3/CMakeCXXCompiler.cmake \
 	/home/mythsnipper/Dev/cpp/QuantumSimulator/build/CMakeFiles/4.4.3/CMakeSystem.cmake \
+	/home/mythsnipper/Dev/cpp/QuantumSimulator/resources.qrc \
 	/home/mythsnipper/Dev/cpp/QuantumSimulator/src/GLRenderer.cpp \
 	/home/mythsnipper/Dev/cpp/QuantumSimulator/src/MainWindow.cpp \
 	/home/mythsnipper/Dev/cpp/QuantumSimulator/src/QT_GLRenderer.cpp \

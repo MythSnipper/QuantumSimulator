@@ -1,10 +1,14 @@
 #pragma once
 
 #include <QOpenGLFunctions_3_3_Core>
+#include <QString>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+
+//forward declare
+class Mesh;
 
 //Renderer objects
 struct Color{
@@ -20,10 +24,6 @@ struct ColorRGBA{
     uint8_t a;
 };
 typedef int UniformID;
-
-//forward declare
-class Mesh;
-
 
 
 class VertexShader : protected QOpenGLFunctions_3_3_Core{
@@ -67,8 +67,6 @@ public:
     void set_mat4(UniformID uid, bool transpose, glm::mat4 matrix);
     void activate();
 };
-
-
 
 
 
@@ -134,24 +132,21 @@ struct Transform{
 class Camera{
 public:
     //position and orientation
-    glm::vec3 position = glm::vec3(4.0f, 3.0f, 5.0f);
-    glm::vec3 target = glm::vec3(0.0f);
-
-    //world up
-    glm::vec3 worldUp = glm::vec3(0.0f, 1.0f, 0.0f);
-
-    //movement
-    float movementSpeed = 5.0f;
-    float mouseSensitivity = 0.1f;
-    float panSensitivity = 0.01f;
-    float yaw = -90.0f;
-    float pitch = 0.0f;
+    glm::vec3 position{4.0f, 3.0f, 5.0f};
+    glm::vec3 target{0.0f, 0.0f, 0.0f};
+    glm::vec3 worldUp{0.0f, 1.0f, 0.0f};
 
     //projection
-    float fov = 90.0f; //degrees
+    float fov = 90.0f;
     float aspect_ratio = 1.0f;
     float near_plane = 0.1f;
     float far_plane = 100.0f;
+
+    //movement
+    float movementSpeed = 10.0f;
+    float rotationSensitivity = 0.2f;
+    float zoomSensitivity = 1.0f;
+
 
     //get matrices for rendering
     glm::mat4 get_view_matrix();
@@ -165,7 +160,6 @@ public:
 
     //other operations
     void rotate(float yaw, float pitch);
-    void pan(float dx, float dy);
     void zoom(float amount);
 
 private: 
@@ -205,9 +199,8 @@ private:
 
 
 //others
-char* read_file(const char* filename);
-
-
+std::string readFile(const std::string& filename);
+std::string readQFile(const QString& path);
 
 
 

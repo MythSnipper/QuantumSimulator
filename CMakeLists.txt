@@ -16,11 +16,14 @@ find_package(Qt6 REQUIRED COMPONENTS
 
 qt_standard_project_setup()
 
+set(CMAKE_AUTORCC ON)
+
 qt_add_executable(QuantumEngine
     src/main.cpp
     src/MainWindow.cpp
     src/GLRenderer.cpp
     src/QT_GLRenderer.cpp
+    resources.qrc
 )
 
 target_include_directories(QuantumEngine

@@ -7,6 +7,7 @@ QuantumEngine: \
   CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o \
   CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o \
   CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o \
+  CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o \
   /usr/lib/libQt6OpenGLWidgets.so.6.11.2 \
   /usr/lib/libQt6Widgets.so.6.11.2 \
   /usr/lib/libQt6OpenGL.so.6.11.2 \
@@ -107,6 +108,8 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o:
 CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o:
 
 CMakeFiles/QuantumEngine.dir/src/QT_GLRenderer.cpp.o:
+
+CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o:
 
 /usr/lib/libQt6OpenGLWidgets.so.6.11.2:
 

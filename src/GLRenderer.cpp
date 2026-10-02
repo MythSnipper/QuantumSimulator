@@ -2,7 +2,11 @@
 
 #include <iostream>
 #include <fstream>
-#include <stdio.h>
+#include <cstdio>
+#include <cmath>
+#include <QFile>
+#include <QByteArray>
+
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -43,9 +47,8 @@ void VertexShader::from_source(const char* shader_source_addr){
     }
 }
 void VertexShader::from_file(const char* filename){
-    char* shader_source = read_file(filename);
-    this->from_source(shader_source);
-    delete[] shader_source;
+    std::string shader_source = readQFile(QString::fromUtf8(filename));
+    this->from_source(shader_source.c_str());
 }
 
 FragmentShader::FragmentShader(){
@@ -83,9 +86,8 @@ void FragmentShader::from_source(const char* shader_source_addr){
     }
 }
 void FragmentShader::from_file(const char* filename){
-    char* shader_source = read_file(filename);
-    this->from_source(shader_source);
-    delete[] shader_source;
+    std::string shader_source = readQFile(QString::fromUtf8(filename));
+    this->from_source(shader_source.c_str());
 }
 
 ShaderProgram::ShaderProgram(){
@@ -431,36 +433,44 @@ void Camera::moveUp(float amount){
     position += worldUp * amount;
     target += worldUp * amount;
 }
-void Camera::rotate(float yaw, float pitch){
-    this->yaw += yaw * mouseSensitivity;
-    this->pitch -= pitch * mouseSensitivity;
+void Camera::rotate(float deltaX, float deltaY){
+    glm::vec3 offset = position - target;
 
-    this->pitch = glm::clamp(
-        this->pitch,
-        -89.0f,
-        89.0f
+    float radius = glm::length(offset);
+    if(radius < 0.001f){
+        return;
+    }
+
+    float yaw = std::atan2(offset.z, offset.x);
+    float pitch = std::asin(
+        glm::clamp(offset.y / radius, -1.0f, 1.0f)
+    );
+
+    yaw -= glm::radians(deltaX * rotationSensitivity);
+    pitch += glm::radians(deltaY * rotationSensitivity);
+
+    float limit = glm::radians(89.0f);
+
+    pitch = glm::clamp(pitch, -limit, limit);
+
+    position = target + glm::vec3(
+        radius * std::cos(pitch) * std::cos(yaw),
+        radius * std::sin(pitch),
+        radius * std::cos(pitch) * std::sin(yaw)
     );
 }
-void Camera::pan(float dx, float dy){
-    glm::vec3 forward = getForward();
-
-    glm::vec3 right =
-        glm::normalize(
-            glm::cross(forward, worldUp)
-        );
-
-    glm::vec3 up =
-        glm::normalize(
-            glm::cross(right, forward)
-        );
-
-    position += (-right * dx + up * dy) * panSensitivity;
-}
 void Camera::zoom(float amount){
-    fov -= amount;
+    glm::vec3 offset = position - target;
+    float distance = glm::length(offset);
 
-    fov = glm::clamp(fov, 10.0f, 90.0f);
+    if(distance < 0.001f){
+        return;
+    }
 
+    distance -= amount * zoomSensitivity;
+    distance = glm::clamp(distance, 0.5f, 100.0f);
+
+    position = target + glm::normalize(offset) * distance;
 }
 
 Mesh::Mesh(float vertices[], int vertices_size){
@@ -513,22 +523,34 @@ void Mesh::draw(){
     vao.unbind();
 }
 
-
-
-
-
 //others
-char* read_file(const char* filename){
+std::string readFile(const std::string& filename){
     std::ifstream file(filename, std::ios::binary | std::ios::ate);
     if(!file){
-        throw std::runtime_error("Err: read_file: Failed to open file for reading");
+        throw std::runtime_error("Err: readFile: Failed to open file for reading");
     }
-    int size = file.tellg();
+    
+    std::streamsize size = file.tellg();
     file.seekg(0, std::ios::beg);
 
-    char* buf = new char[size + 1];
-    file.read(buf, size);
-    buf[size] = '\0';
+    std::string content;
+    content.resize(size);
+    
+    if(!file.read(&content[0], size)){
+        throw std::runtime_error("Err: readFile: Failed to read file content");
+    }
 
-    return buf;
+    return content;
+}
+
+std::string readQFile(const QString& path){
+    QFile file(path);
+
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text)){
+        throw std::runtime_error("Err: readQFile: Failed to open shader: " + path.toStdString());
+    }
+
+    QByteArray source = file.readAll();
+
+    return source.toStdString();
 }

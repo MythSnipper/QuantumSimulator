@@ -155,6 +155,30 @@ QuantumEngine_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine_autogen.dir/build.make CMakeFiles/QuantumEngine_autogen.dir/build
 .PHONY : QuantumEngine_autogen/fast
 
+QuantumEngine_autogen/EWIEGA46WW/qrc_resources.o: QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : QuantumEngine_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+QuantumEngine_autogen/EWIEGA46WW/qrc_resources.i: QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : QuantumEngine_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+QuantumEngine_autogen/EWIEGA46WW/qrc_resources.s: QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : QuantumEngine_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantumEngine.dir/build.make CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 QuantumEngine_autogen/mocs_compilation.o: QuantumEngine_autogen/mocs_compilation.cpp.o
 .PHONY : QuantumEngine_autogen/mocs_compilation.o
 
@@ -286,6 +310,9 @@ help:
 	@echo "... QuantumEngine_autogen"
 	@echo "... QuantumEngine_autogen_timestamp_deps"
 	@echo "... QuantumEngine"
+	@echo "... QuantumEngine_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... QuantumEngine_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... QuantumEngine_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... QuantumEngine_autogen/mocs_compilation.o"
 	@echo "... QuantumEngine_autogen/mocs_compilation.i"
 	@echo "... QuantumEngine_autogen/mocs_compilation.s"

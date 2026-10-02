@@ -404,9 +404,9 @@ CMakeFiles/QuantumEngine.dir/src/MainWindow.cpp.o: \
  /usr/include/qt6/QtOpenGL/qopenglversionfunctions.h \
  /usr/include/qt6/QtGui/qopenglcontext.h \
  /usr/include/qt6/QtGui/qopenglcontext_platform.h \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/simd/platform.h \
- /usr/include/c++/16/cfloat \
+ /usr/include/qt6/QtCore/QString /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/simd/platform.h /usr/include/c++/16/cfloat \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/float.h \
  /usr/include/glm/fwd.hpp /usr/include/glm/detail/qualifier.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \

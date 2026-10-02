@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QuantumEngine_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/QuantumEngine_autogen.dir/ParseCache.txt"
   "QuantumEngine_autogen"
+  "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+  "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/QuantumEngine.dir/QuantumEngine_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/QuantumEngine.dir/src/GLRenderer.cpp.o"
@@ -15,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/QuantumEngine.dir/src/main.cpp.o.d"
   "QuantumEngine"
   "QuantumEngine.pdb"
+  "QuantumEngine_autogen/EWIEGA46WW/qrc_resources.cpp"
   "QuantumEngine_autogen/mocs_compilation.cpp"
   "QuantumEngine_autogen/timestamp"
 )

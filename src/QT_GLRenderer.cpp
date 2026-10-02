@@ -1,10 +1,9 @@
 #include "QT_GLRenderer.hpp"
 
-#include <stdio.h>
-#include <iostream>
+#include <cstdio>
 
-const char* vertexShaderPath = "shaders/vert.glsl";
-const char* fragmentShaderPath = "shaders/frag.glsl";
+const char* vertexShaderPath = ":/shaders/vert.glsl";
+const char* fragmentShaderPath = ":/shaders/frag.glsl";
 
 QT_GLRenderer::QT_GLRenderer(QWidget* parent) : QOpenGLWidget(parent){
     //settings
@@ -56,10 +55,18 @@ void QT_GLRenderer::paintGL(){
     //clear screen
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+    int tempntrack = 0;
     //draw render objects
     for(auto& object : objects){
+        if(tempntrack == 1){
+            glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        }
         glm::vec3 t = object.get()->transform.position;
         drawRenderObject(object);
+        if(tempntrack == 1){
+            glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+        }
+        tempntrack++;
     }
 }
 
@@ -81,11 +88,11 @@ void QT_GLRenderer::keyPressEvent(QKeyEvent* event){
             moveRight = true;
             break;
 
-        case Qt::Key_Space:
+        case Qt::Key_E:
             moveUp = true;
             break;
 
-        case Qt::Key_Control:
+        case Qt::Key_Q:
             moveDown = true;
             break;
     }
@@ -109,68 +116,50 @@ void QT_GLRenderer::keyReleaseEvent(QKeyEvent* event){
             moveRight = false;
             break;
 
-        case Qt::Key_Space:
+        case Qt::Key_E:
             moveUp = false;
             break;
 
-        case Qt::Key_Control:
+        case Qt::Key_Q:
             moveDown = false;
             break;
     }
 }
 
 void QT_GLRenderer::mousePressEvent(QMouseEvent* event){
-    setFocus();
-
-    lastMousePosition = event->position().toPoint();
-
     if(event->button() == Qt::RightButton){
         rotating = true;
-    }
-    if(event->button() == Qt::MiddleButton){
-        panning = true;
+        lastMousePosition = event->position().toPoint();
+        grabMouse();
     }
 }
 
 void QT_GLRenderer::mouseReleaseEvent(QMouseEvent* event){
     if(event->button() == Qt::RightButton){
         rotating = false;
-    }
-
-    if(event->button() == Qt::MiddleButton){
-        panning = false;
+        releaseMouse();
     }
 }
 
 void QT_GLRenderer::mouseMoveEvent(QMouseEvent* event){
+    if(!rotating){
+        return;
+    }
+
     QPoint current = event->position().toPoint();
-
     QPoint delta = current - lastMousePosition;
-
     lastMousePosition = current;
 
-    if(rotating){
-        camera.rotate(
-            delta.x(),
-            delta.y()
-        );
-        update();
-    }
-    if(panning){
-        camera.pan(
-            delta.x(),
-            delta.y()
-        );
-        update();
-    }
+    camera.rotate(delta.x(), -delta.y());
+    update();
 }
 
 void QT_GLRenderer::wheelEvent(QWheelEvent* event){
-    camera.zoom(
-        event->angleDelta().y() / 120.0f
-    );
-}
+    float steps = event->angleDelta().y() / 120.0f;
 
+    camera.zoom(steps);
+    update();
+}
 
 void QT_GLRenderer::updateCamera(float deltaTime){
     if(moveForward){
@@ -259,19 +248,25 @@ void QT_GLRenderer::createGLResources(){
     
     objects.clear();
 
-    //make render object
+    //make render objects
     auto cube1 = std::make_unique<RenderObject>();
     cube1->transform.position = glm::vec3(-2.0f, 0.0f, 0.0f);
     cube1->mesh = mesh.get();
     cube1->shader = shaderProgram.get();
     objects.push_back(std::move(cube1));
 
-    //make another render object
     auto cube2 = std::make_unique<RenderObject>();
     cube2->transform.position = glm::vec3(2.0f, 0.0f, 0.0f);
     cube2->mesh = mesh.get();
     cube2->shader = shaderProgram.get();
     objects.push_back(std::move(cube2));
+
+    auto cube3 = std::make_unique<RenderObject>();
+    cube3->transform.position = glm::vec3(0.0f, 0.0f, 0.0f);
+    cube3->transform.scale = glm::vec3(0.5f, 0.5f, 0.5f);
+    cube3->mesh = mesh.get();
+    cube3->shader = shaderProgram.get();
+    objects.push_back(std::move(cube3));
 }
 
 void QT_GLRenderer::destroyGLResources(){
